@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,42 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ========================Estilizações globais======================= */
+
+:root {
+  --main-color: #263BFC;
+  --text-color: #000000;
+  --bg-color-1: #ffffff;
+  --bg-color-2: #AFDCFF;
+  --color-00: #0000001a;
+
+  --color-01: #999999;
+  --color-02: #009539;
+  --color-03: #7950f2;
+  --color-04: #c00000;
+  --color-05: #232323;
 }
+
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+html {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color-1);
+  color: var(--text-color);
+}
+
+/* ========================/Estilizações globais======================= */
