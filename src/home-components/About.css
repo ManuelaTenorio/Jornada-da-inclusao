@@ -1,0 +1,45 @@
+@import url('color_pallete.css');
+
+.about-container {
+    background-color: var(--white);
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .about-image {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0; /* Garante que a imagem não encolha */
+  }
+  
+  .about-item p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--black);
+    margin: 0;
+  }
+  
