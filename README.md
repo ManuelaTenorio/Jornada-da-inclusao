@@ -9,9 +9,9 @@ Haverá a utilização de uma combinação de avaliações interativas e persona
 O objetivo principal, é melhorar o desempenho individual das crianças, podendo promover uma educação de qualidade e reduzir assim a desigualdade educacional, visando atingir os Objetivos de Desenvolvimento Sustentável (ODS) 4 e 10.
 
 # Integrantes
-- Manuela Tenorio da Silva
-- Pedro Henrique Santos Bernardo 
-- Marcos Vinícius de Oliveira 
-- Renato W. de Lima Jacob
-- Luciana Guedes de Araújo 
-- Gabriel Dourado dos Santos 
+- [Manuela Tenorio da Silva](https://github.com/ManuelaTenorio)
+- [Pedro Henrique Santos Bernardo](https://github.com/Pedro-HSB)
+- [Marcos Vinícius de Oliveira](https://github.com/ViniMarkos283)
+- [Renato W. de Lima Jacob](https://github.com/renatowljacob)
+- [Luciana Guedes de Araújo](https://github.com/Luciana-Guedes-de-Araujo) 
+- [Gabriel Dourado dos Santos](https://github.com/gabrieldourado21) 

@@ -1,0 +1,81 @@
+@import url('color_pallete.css');
+
+div.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+    background-color: var(--white);
+    padding: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+li > img{
+    width: 50px;
+}
+
+li > select{
+    width: 20px;
+}
+
+li > input{
+    border: none;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+li > input:hover{
+    border-bottom: 2.5px solid red;
+    margin-top: 2.5px;
+    transition: 0.1s;
+    
+}
+
+li {
+    list-style-type: none;
+  }
+
+  .footer {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+
+@media (max-width: 480px) {
+    div.head{
+        gap: 10px;
+    }
+}
+
