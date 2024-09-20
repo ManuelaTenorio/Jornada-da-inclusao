@@ -9,6 +9,8 @@ import JogoCores from './pages/jogoCores.jsx';
 import JogoMemoria from './pages/jogoMemoria.jsx';
 import JogoNumeros from './pages/jogoNumeros.jsx';
 import Login from './pages/login.jsx';
+import Resultados from './pages/resultados.jsx';
+import Perfil from './pages/perfil.jsx';
 
 const App = () => (
   <Router>
@@ -19,6 +21,8 @@ const App = () => (
       <Route path="/jogo-memoria" element={<JogoMemoria />} />
       <Route path="/jogo-numeros" element={<JogoNumeros />} />
       <Route path="/jogo-cores" element={<JogoCores />} />
+      <Route path="/resultados" element={<Resultados />} />
+      <Route path="/perfil" element={<Perfil />} />
     </Routes>
   </Router>
 );
