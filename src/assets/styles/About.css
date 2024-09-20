@@ -26,13 +26,14 @@
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
   }
   
   .about-image {
-    width: 150px;
+    width: 200px;
     height: auto;
     flex-shrink: 0; /* Garante que a imagem não encolha */
+    border-radius: 18px;
   }
   
   .about-item p {

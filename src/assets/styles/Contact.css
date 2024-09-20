@@ -2,15 +2,15 @@
 
 .contact-container {
     background-color: var(--white);
-    padding: 40px;
-    max-width: 800px;
-    margin: 30px auto;
+    padding: 10px 40px 40px 40px;
+    max-width: 500px;
+    margin: 40px auto;
     border-radius: 18px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   }
   
   .contact-container h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: sans-serif;
     color: #333;
     margin-bottom: 20px;
@@ -24,6 +24,8 @@
   }
   
   .contact-form label {
+    font-family: sans-serif;
+    margin-bottom: -10px;
     font-size: 1rem;
     color: #555;
   }
@@ -35,6 +37,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+    font-family: sans-serif;
   }
   
   .contact-form button {
@@ -42,7 +45,7 @@
     color: white;
     border: none;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 18px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;

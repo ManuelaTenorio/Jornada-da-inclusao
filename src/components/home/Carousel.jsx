@@ -2,7 +2,7 @@ import '../../assets/styles/Carousel.css';
 
 const Carousel = () => {
   return (
-    <div className="carousel">
+    <div className="carousel" id="pagina-principal">
       <input type="radio" name="carousel" id="item-1" defaultChecked />
       <input type="radio" name="carousel" id="item-2" />
       <input type="radio" name="carousel" id="item-3" />
