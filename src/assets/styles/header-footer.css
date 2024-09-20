@@ -1,6 +1,6 @@
 @import url('color_pallete.css');
 
-div.head{
+div.head {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -8,74 +8,76 @@ div.head{
     gap: 5%;
     background-color: var(--white);
     padding: 10px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Adiciona posição fixa */
+    top: 0; /* Fixa o cabeçalho ao topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    z-index: 1000; /* Mantém o cabeçalho acima de outros elementos */
 }
 
-li > img{
+li > img {
     width: 50px;
 }
 
-li > select{
+.link-styles {
+    color: var(--black);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+li > select {
     width: 20px;
 }
 
-li > input{
-    border: none;
-    font-size: medium;
-    font-weight: bolder;
-    background-color: transparent;
-}
-
-li > input:hover{
+li > input:hover {
     border-bottom: 2.5px solid red;
     margin-top: 2.5px;
     transition: 0.1s;
-    
 }
 
 li {
     list-style-type: none;
-  }
+}
 
-  .footer {
+.footer {
     background-color: var(--white);
     color: var(--black);
     padding: 20px;
     text-align: center;
     font-family: sans-serif;
     font-weight: bolder;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
 
-  }
-  
-  .footer-content {
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .footer p {
+}
+
+.footer p {
     margin: 0;
     font-size: 0.9rem;
-  }
-  
-  .social-links {
+}
+
+.social-links {
     margin-top: 10px;
-  }
-  
-  .social-links a {
+}
+
+.social-links a {
     margin: 0 10px;
-  }
-  
-  .social-links img {
+}
+
+.social-links img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
-  }
-  
+}
 
 @media (max-width: 480px) {
-    div.head{
+    div.head {
         gap: 10px;
     }
 }
-
