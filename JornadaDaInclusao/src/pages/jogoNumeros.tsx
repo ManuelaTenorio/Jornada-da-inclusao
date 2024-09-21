@@ -31,7 +31,7 @@ export default function JogoNumeros() {
     // Quantidade de elementos a serem gerados
     const elements: number[] = Populate(10);
     const listElements = elements.map(element =>
-        <NumberBox value={element} />
+        <NumberBox key={elements.indexOf(element)} value={element} />
     );
 
     return (
