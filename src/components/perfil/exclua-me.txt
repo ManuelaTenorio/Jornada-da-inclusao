@@ -1,0 +1,1 @@
+txt só pro git n apagar a pasta, quando for usar a pasta, me apague

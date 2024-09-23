@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  width: 100%;
+  height: 70vh;
+  padding-top: 80px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f0f0f0; 
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%; /* 3 slides = 300% da largura */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Centraliza a imagem dentro do container */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 100%; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que a imagem se ajuste sem cortar */
+  display: block;
+  max-height: 100%; /* Limita a altura da imagem para o banner */
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#item-1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+
+#item-2:checked ~ .carousel-inner {
+  transform: translateX(-100%);
+}
+
+#item-3:checked ~ .carousel-inner {
+  transform: translateX(-200%);
+}
+
+#item-1:checked ~ .controls label[for="item-1"],
+#item-2:checked ~ .controls label[for="item-2"],
+#item-3:checked ~ .controls label[for="item-3"] {
+  background-color: #333;
+}
