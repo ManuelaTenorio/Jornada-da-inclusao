@@ -1,0 +1,104 @@
+/* TODO: Find a better way to apply background color, currently not viable */
+:root {
+  --bg-color: dodgerblue;
+  --fg-color-cor: navy;
+  --container-color-cor: lightblue;
+  --box-color-cor: #D9D9D9;
+}
+
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  margin: auto;
+  padding: 2rem;
+  max-width: 60rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.infoArea {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 2rem;
+
+  padding: 2rem;
+  background-color: var(--box-color-cor);
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+
+  .info {
+    background-color: color-mix(in srgb, var(--box-color-cor), black 25%);
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+
+  }
+
+  .colorArea {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+
+    background-color: var(--box-color-cor);
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition-duration: .5s;
+
+    .square {
+      height: 50px;
+      width: 50px;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: auto;
+    }
+  }
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-around;
+  max-width: 200px;
+  margin: auto;
+
+  background-color: var(--box-color-cor);
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 15px;
+
+  .dropArea {
+    background-color: color-mix(in srgb, var(--box-color-cor), black 25%);
+    height: 75px;
+    width: 75px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: auto;
+  }
+}
