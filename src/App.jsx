@@ -13,8 +13,8 @@ import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
 import FaceJogoVogais from './pages/FaceJogoVogais/FaceJogoVogais.jsx';
 
-import TesteCode from './pages/codesandbox/TesteCode.jsx';
-import MyComponent from './pages/codesandbox/Teste.jsx';
+// import TesteCode from './pages/codesandbox/TesteCode.jsx';
+// import MyComponent from './pages/codesandbox/Teste.jsx';
 
 const App = () => (
   <Router>
@@ -28,8 +28,6 @@ const App = () => (
       <Route path="/jogo-cores" element={<JogoCores />} />
       <Route path="/resultados" element={<Resultados />} />
       <Route path="/perfil" element={<Perfil />} />MyComponent
-      <Route path="/teste" element={<TesteCode />} />
-      <Route path="/MyComponent" element={<MyComponent />} />
     </Routes>
   </Router>
 );
@@ -38,3 +36,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
 export default App;
+
+{/* <Route path="/teste" element={<TesteCode />} />
+<Route path="/MyComponent" element={<MyComponent />} /> */}
