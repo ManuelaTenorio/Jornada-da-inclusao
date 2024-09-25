@@ -11,7 +11,7 @@ import JogoNumeros from './pages/jogoNumeros.jsx';
 import Login from './pages/login.jsx';
 import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
-import FaceJogoVogais from './pages/FaceJogoVogais/FaceJogoVogais.jsx';
+import FaceJogoVogais from './pages/faceJogoVogais/FaceJogoVogais.jsx';
 
 // import TesteCode from './pages/codesandbox/TesteCode.jsx';
 // import MyComponent from './pages/codesandbox/Teste.jsx';
