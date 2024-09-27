@@ -16,10 +16,10 @@ export const colors = [
   { id: 5, name: "vermelho", theme: { backgroundColor: "#EB4A4A" } },
 ]
 
-export const phrases = [
-  { id: 0, sentence: "adora o" },
-  { id: 1, sentence: "ama o" },
-  { id: 2, sentence: "é fã do" },
-  { id: 3, sentence: "gosta do" },
-  { id: 4, sentence: "prefere o" },
+export const strings = [
+  { id: 0, body: "adora o" },
+  { id: 1, body: "ama o" },
+  { id: 2, body: "é fã do" },
+  { id: 3, body: "gosta do" },
+  { id: 4, body: "prefere o" },
 ]

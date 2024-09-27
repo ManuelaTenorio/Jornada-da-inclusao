@@ -1,23 +1,25 @@
 import React from 'react';
 import { random } from '../../hooks/utils.js'
-import { animals, colors, phrases } from './Data.jsx'
+import { animals, colors, strings } from './Data.jsx'
 
-function Description({ animal, color, phrase }) {
-  return <p>{animal.article} <b>{animal.name}</b> {phrase.sentence} {color.name}</p>
+function Description({ animal, color, string }) {
+  return <p>{animal.article} <b>{animal.name}</b> {string.body} {color.name}</p>
 }
 
-// TODO: Make color and phrase independent of animal position
 export function Descriptions() {
+  const colorRand = random(colors);
+  const stringRand = random(strings);
+
   const descriptions = animals.map(element => {
-    const color = colors.find(c => c.id == element.id);
-    const phrase = phrases.find(p => p.id == element.id) || phrases[0];
+    const color = colorRand.at(element.id);
+    const string = stringRand.at(element.id) || stringRand.at(random(strings.id));
 
     return (
       <Description
         key={element.id}
         animal={element}
         color={color}
-        phrase={phrase}
+        string={string}
       />
     )
   })
