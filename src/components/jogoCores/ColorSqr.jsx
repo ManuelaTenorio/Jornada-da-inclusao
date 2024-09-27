@@ -1,5 +1,5 @@
 import React from "react";
-import { random } from "../../hooks/utils.jsx"
+import { random } from "../../hooks/utils.js"
 import { colors } from "./Data.jsx"
 import classes from '../../assets/styles/jogoCores.module.css'
 

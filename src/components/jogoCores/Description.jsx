@@ -1,5 +1,5 @@
 import React from 'react';
-import { random } from '../../hooks/utils.jsx'
+import { random } from '../../hooks/utils.js'
 import { animals, colors, phrases } from './Data.jsx'
 
 function Description({ animal, color, phrase }) {

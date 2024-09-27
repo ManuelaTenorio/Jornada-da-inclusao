@@ -1,7 +1,7 @@
 import React from 'react'
 import { DropBox } from '../components/jogoNumeros/DropBox'
 import { NumberBox } from '../components/jogoNumeros/NumberBox'
-import { random } from '../hooks/utils.jsx'
+import { random } from '../hooks/utils.js'
 import classes from '../assets/styles/jogoNumeros.module.css'
 
 function Populate(n) {
