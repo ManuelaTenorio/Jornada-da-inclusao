@@ -1,7 +1,7 @@
 import React from 'react';
-import { random } from '../../hooks/utils.jsx'
-import { animals } from './Data.jsx'
 import classes from '../../assets/styles/jogoCores.module.css'
+import { animals } from './Data.jsx'
+import { random } from '../../hooks/utils.jsx'
 
 function Image({ animal }) {
   return (
