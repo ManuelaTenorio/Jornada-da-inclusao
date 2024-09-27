@@ -18,7 +18,6 @@ export default function JogoNumeros() {
                     <div className={classes.colorArea}>
                         <Colors />
                     </div>
-
                 </div>
                 <div className={classes.cardGrid}>
                     <Cards />

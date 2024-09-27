@@ -10,7 +10,7 @@ function Description({ animal, color, phrase }) {
 export function Descriptions() {
   const descriptions = animals.map(element => {
     const color = colors.find(c => c.id == element.id);
-    const phrase = phrases.find(p => p.id == element.id);
+    const phrase = phrases.find(p => p.id == element.id) || phrases[0];
 
     return (
       <Description
