@@ -1,16 +1,33 @@
 import React from 'react';
+import { random } from '../../hooks/utils.jsx'
 import { animals } from './Data.jsx'
-import { Random } from '../../hooks/Random.jsx'
 import classes from '../../assets/styles/jogoCores.module.css'
 
-export function Card(value) {
-  // BUG: Images not showing up in page.
+function Image({ animal }) {
+  return (
+    <img
+      src={animal.img}
+      width={100}
+      alt={animal.name}
+    />
+  )
+}
 
+function Card({ animal }) {
   return (
     <div className={classes.card}>
-      <img src={value.path} width="100px" alt={value.name} />
+      <Image
+        animal={animal}
+      />
       <div className={classes.dropArea}></div>
     </div>
   )
 }
 
+export function Cards() {
+  const cards = animals.map(element =>
+    <Card animal={element} />
+  )
+
+  return random(cards)
+}
