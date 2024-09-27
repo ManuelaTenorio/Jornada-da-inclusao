@@ -1,7 +1,7 @@
 import React from 'react'
 import { DropBox } from '../components/jogoNumeros/DropBox'
 import { NumberBox } from '../components/jogoNumeros/NumberBox'
-import { Random } from '../hooks/Random.jsx'
+import { random } from '../hooks/utils.jsx'
 import classes from '../assets/styles/jogoNumeros.module.css'
 
 function Populate(n) {
@@ -11,7 +11,7 @@ function Populate(n) {
         numbers.push(i);
     }
 
-    return Random(numbers);
+    return random(numbers);
 }
 
 export default function JogoNumeros() {
