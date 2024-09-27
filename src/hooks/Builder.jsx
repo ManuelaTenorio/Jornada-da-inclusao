@@ -7,7 +7,7 @@ class Builder {
   elementList;
   isRandom = false;
   isDraggable = false;
-  timer;
+  timer = 0;
 
   setName(name) {
     this.name = name;
@@ -27,6 +27,10 @@ class Builder {
     if (bool === true) {
       this.isDraggable = true;
     }
+  }
+
+  setTimer(number) {
+    this.timer = number;
   }
 
   setElements(Component, obj) {
