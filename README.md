@@ -1,50 +1,18 @@
-# React + TypeScript + Vite
+# PI - Jornada da Inclusão 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre
 
-Currently, two official plugins are available:
+O projeto Jornada da Inclusão, será desenvolvido para identificar e atender as necessidades específicas de cada criança, que possui dificuldades de inclusão, nos ambientes escolares. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Haverá a utilização de uma combinação de avaliações interativas e personalizadas, além de métodos de ensino, com recursos e atividades que auxiliem, principalmente, nos processos de alfabetização e identificação dos números. 
 
-## Expanding the ESLint configuration
+O objetivo principal, é melhorar o desempenho individual das crianças, podendo promover uma educação de qualidade e reduzir assim a desigualdade educacional, visando atingir os Objetivos de Desenvolvimento Sustentável (ODS) 4 e 10.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Integrantes
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Manuela Tenorio da Silva
+- Pedro Henrique Santos Bernardo 
+- Marcos Vinícius de Oliveira 
+- Renato W. de Lima Jacob
+- Luciana Guedes de Araújo 
+- Gabriel Dourado dos Santos 
