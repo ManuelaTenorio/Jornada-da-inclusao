@@ -1,5 +1,9 @@
 import '../../assets/styles/Carousel.css';
 
+import img1 from '../../assets/images/img1.jpeg';
+import img2 from '../../assets/images/img2.jpeg';
+import img3 from '../../assets/images/img2.jpeg';
+
 const Carousel = () => {
   return (
     <div className="carousel" id="pagina-principal">
@@ -10,19 +14,19 @@ const Carousel = () => {
       <div className="carousel-inner">
         <div className="carousel-item">
           <img
-            src="https://via.placeholder.com/1920x600/ff7f7f/333333?text=Slide+1"
+            src={img1}
             alt="Slide 1"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://via.placeholder.com/1920x600/7f7fff/333333?text=Slide+2"
+            src={img2}
             alt="Slide 2"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://via.placeholder.com/1920x600/7fff7f/333333?text=Slide+3"
+            src={img3}
             alt="Slide 3"
           />
         </div>

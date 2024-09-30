@@ -28,7 +28,7 @@ function Header() {
       <li onClick={() => scrollToSection('lista-jogos')} className="link-styles">Lista de Jogos</li>
       <li onClick={() => scrollToSection('sobre-nos')} className="link-styles">Sobre Nós</li>
       <li onClick={() => scrollToSection('contato')} className="link-styles">Contato</li>
-      <li><Link className={"link-styles"} to="/login">Login/Cadastro</Link></li>
+      <li><Link className={"link-styles"} to="/login">Login</Link></li>
     </div>
   );
 }

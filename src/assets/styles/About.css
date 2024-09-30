@@ -30,15 +30,17 @@
   }
   
   .about-image {
-    width: 200px;
-    height: auto;
+    width: 300px;
+    margin: 10px;
+    height: 300px;
+    object-fit: cover;
     flex-shrink: 0; /* Garante que a imagem não encolha */
     border-radius: 18px;
   }
   
   .about-item p {
     font-family: sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--black);
     margin: 0;

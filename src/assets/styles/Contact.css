@@ -38,6 +38,7 @@
     border-radius: 4px;
     font-size: 1rem;
     font-family: sans-serif;
+    resize: none;
   }
   
   .contact-form button {
