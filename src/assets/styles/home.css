@@ -1,0 +1,18 @@
+@import url('color_pallete.css');
+
+div.home{
+    background-image: url(../src/assets/images/background-home.jpg);
+}
+
+.home h1{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: var(--white);
+    padding: 20px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+}
