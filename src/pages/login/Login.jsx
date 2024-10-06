@@ -16,7 +16,7 @@ function Login() {
                         <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
                     </div>
                     <input type="submit" value="Entrar" />
-                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                    <p>Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
                 </form>
             </div>
         </>
