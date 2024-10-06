@@ -8,7 +8,7 @@ import Cadastro from './pages/cadastro.jsx';
 import JogoCores from './pages/jogoCores.jsx';
 import JogoMemoria from './pages/jogoMemoria.jsx';
 import JogoNumeros from './pages/jogoNumeros.jsx';
-import Login from './pages/login.jsx';
+import Login from './pages/login/Login.jsx';
 import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
 import FaceJogoVogais from './pages/FaceJogoVogais/FaceJogoVogais.jsx';
