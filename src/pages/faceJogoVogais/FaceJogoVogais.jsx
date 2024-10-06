@@ -29,12 +29,12 @@ function FaceJogoVogais() {
 
         return (
             <div ref={setNodeRef} className="resultLetter">
-                <div className="bgImage">
-                    {droppedLetters.map(letter => (
+                {droppedLetters.map(letter => (
                         <div key={letter.id} className="letterInDroppable">
                             {String.fromCharCode(64 + letter.value)}
                         </div>
                     ))}
+                <div className="bgImage">
                 </div>
             </div>
         );
