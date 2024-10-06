@@ -8,9 +8,9 @@ import Cadastro from './pages/cadastro.jsx';
 import JogoCores from './pages/jogoCores.jsx';
 import JogoMemoria from './pages/jogoMemoria.jsx';
 import JogoNumeros from './pages/jogoNumeros.jsx';
-import Login from './pages/login.jsx';
 import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
+import Login from './pages/login/Login.jsx';
 import FaceJogoVogais from './pages/FaceJogoVogais/FaceJogoVogais.jsx';
 
 // import TesteCode from './pages/codesandbox/TesteCode.jsx';
@@ -27,7 +27,8 @@ const App = () => (
       <Route path="/jogo-vogais" element={<FaceJogoVogais />} />
       <Route path="/jogo-cores" element={<JogoCores />} />
       <Route path="/resultados" element={<Resultados />} />
-      <Route path="/perfil" element={<Perfil />} />MyComponent
+      <Route path="/perfil" element={<Perfil />} />
+      <Route path='/login' element={<Login />} />
     </Routes>
   </Router>
 );
