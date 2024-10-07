@@ -29,7 +29,7 @@ function FaceJogoVogais() {
 
         return (
             <div ref={setNodeRef} className="resultLetter">
-                <div>
+                <div className='dropaArea'>
                 {droppedLetters.map(letter => (
                         <div key={letter.id} className="letterInDroppable">
                             {String.fromCharCode(64 + letter.value)}
