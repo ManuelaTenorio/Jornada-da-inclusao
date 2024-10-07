@@ -29,12 +29,15 @@ function FaceJogoVogais() {
 
         return (
             <div ref={setNodeRef} className="resultLetter">
+                <div>
                 {droppedLetters.map(letter => (
                         <div key={letter.id} className="letterInDroppable">
                             {String.fromCharCode(64 + letter.value)}
                         </div>
                     ))}
-                <div className="bgImage">
+                </div>
+                    <div className="bgImage">
+                    <img src="'../../assets/images/jacare-removebg.png" alt="" />
                 </div>
             </div>
         );
@@ -61,7 +64,7 @@ function FaceJogoVogais() {
             <div className='game'>
                 <div className='gameContent'>
                     <div className="phrase">
-                        ARRASTE PARA CIMA APENAS AS LETRAS VOGAIS
+                        <p>ARRASTE PARA CIMA APENAS AS LETRAS VOGAIS</p>
                     </div>
                     <DndContext
                         sensors={sensors}

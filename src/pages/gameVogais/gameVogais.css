@@ -13,6 +13,20 @@
     border: 10px;
 }
 
+.gameContent {
+    border-radius: 10px;
+    border-color: #7aa74d;
+    border-style: groove;
+    width: 800px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .bgImage {
     background-image: url('../../assets/images/jacare-removebg.png');
     background-size: contain;
