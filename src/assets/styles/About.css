@@ -36,6 +36,7 @@
     object-fit: cover;
     flex-shrink: 0; /* Garante que a imagem não encolha */
     border-radius: 18px;
+    background-color: var(--color-2);
   }
   
   .about-item p {

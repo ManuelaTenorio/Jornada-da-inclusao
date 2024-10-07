@@ -24,9 +24,9 @@ function Header() {
       <li>
         <img src={PiLogo} alt="Logo da página Integra Kids, ilustrando um jogo educativo" />
       </li>
-      <li onClick={() => scrollToSection('pagina-principal')} className="link-styles">Página Principal</li>
-      <li onClick={() => scrollToSection('lista-jogos')} className="link-styles">Lista de Jogos</li>
-      <li onClick={() => scrollToSection('sobre-nos')} className="link-styles">Sobre Nós</li>
+      <li onClick={() => scrollToSection('pagina-principal')} className="link-styles">Inicio</li>
+      <li onClick={() => scrollToSection('lista-jogos')} className="link-styles">Jogos</li>
+      <li onClick={() => scrollToSection('sobre-nos')} className="link-styles">Sobre</li>
       <li onClick={() => scrollToSection('contato')} className="link-styles">Contato</li>
       <li><Link className={"link-styles"} to="/login">Login</Link></li>
     </div>
