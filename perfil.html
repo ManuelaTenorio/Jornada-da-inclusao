@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Cliente</title>
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+  <div id="profile-container">
+    <div class="form-container">
+      <h1></h1>
+      <div class="profile-picture">
+        <img src="img/perfil.jpg" alt="Foto do perfil">
+      </div>
+      <div class="user-info">
+        <label for="name">Nome:</label>
+        <p id="name">João da Silva</p>
+        
+        <label for="email">E-mail:</label>
+        <p id="email">joao.silva@email.com</p>
+        
+        <label for="phone">Telefone:</label>
+        <p id="phone">(11) 91234-5678</p>
+      </div>
+      <input type="button" value="Editar Perfil" onclick="editProfile()">
+      
+      <div class="recent-actions">
+        <h2>Ações Recentes</h2>
+        <ul>
+          <li>Atualizou sua senha</li>
+          <li>Mudou o número de telefone</li>
+          <li>Atualizou o endereço</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
