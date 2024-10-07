@@ -17,8 +17,11 @@ function Login() {
                             <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
                         </div>
                         <input type="submit" value="Entrar" />
-                        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
                     </form>
+                    <div className="pcls">
+                        <p>Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
+                        <p><a href="/">Voltar Página Inicial</a></p>
+                    </div>
                 </div>
             </div>
         </>
