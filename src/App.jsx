@@ -10,16 +10,19 @@ import JogoMemoria from './pages/jogoMemoria.jsx';
 import JogoNumeros from './pages/jogoNumeros.jsx';
 import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
-import Login from './pages/login/Login.jsx';
+import Login from './pages/login/Login.tsx';
 import FaceJogoVogais from './pages/FaceJogoVogais/FaceJogoVogais.jsx';
+import { AuthProvider } from './contexts/AuthContext.tsx';
 
 // import TesteCode from './pages/codesandbox/TesteCode.jsx';
 // import MyComponent from './pages/codesandbox/Teste.jsx';
 
 const App = () => (
-  <Router>
+  <AuthProvider>
+    <Router>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/login" element={<Login />} />
       <Route path="/jogo-memoria" element={<JogoMemoria />} />
@@ -28,9 +31,9 @@ const App = () => (
       <Route path="/jogo-cores" element={<JogoCores />} />
       <Route path="/resultados" element={<Resultados />} />
       <Route path="/perfil" element={<Perfil />} />
-      <Route path='/login' element={<Login />} />
     </Routes>
   </Router>
+  </AuthProvider>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
