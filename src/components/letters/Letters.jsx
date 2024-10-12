@@ -12,8 +12,6 @@ function Letters({ id, value }) {
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: '20px',
-    color: 'white',
-    borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     willChange: 'transform',
   };
