@@ -133,6 +133,7 @@ function Cadastro() {
               <input type="submit" value="Cadastrar" />
 
               <p>Já tem cadastro?<a href="/login">  Faça seu login</a></p>
+              <p><a href="/">Voltar Para Home</a></p>
             </div>
           </form>
         </div>
