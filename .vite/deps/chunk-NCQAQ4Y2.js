@@ -1,4 +1,7 @@
 import {
+  require_react_dom
+} from "./chunk-TNTPHDQH.js";
+import {
   CSS,
   add,
   canUseDOM,
@@ -21,14 +24,13 @@ import {
   useNodeRef,
   usePrevious,
   useUniqueId
-} from "./chunk-P456RMZX.js";
+} from "./chunk-NX4L7PQH.js";
 import {
-  require_react_dom
-} from "./chunk-QPG7G3M7.js";
-import {
-  __toESM,
   require_react
-} from "./chunk-UTEJFLXC.js";
+} from "./chunk-32E4H3EV.js";
+import {
+  __toESM
+} from "./chunk-G3PMV62Z.js";
 
 // node_modules/@dnd-kit/core/dist/core.esm.js
 var import_react2 = __toESM(require_react());
@@ -3519,4 +3521,4 @@ export {
   defaultDropAnimationConfiguration,
   DragOverlay
 };
-//# sourceMappingURL=chunk-SMP6ZE2D.js.map
+//# sourceMappingURL=chunk-NCQAQ4Y2.js.map
