@@ -1,55 +1,56 @@
 ## Versionamento
+
 Este projeto utiliza [Git](https://git-scm.com/) para controle de versão. Abaixo estão as principais versões e alterações feitas ao longo do desenvolvimento:
 
-# Versão 0.4.2
+### Versão 0.4.2
 **13 de outubro de 2024**: 
-- ajustes no login e cadastro
-- ajustes na integração com mongoDB
-- ajustes nos plugins Vlibras e acessibilidade
-- ajustes visuais nos jogos: cores e numeros
+- Ajustes no login e cadastro.
+- Ajustes na integração com MongoDB.
+- Ajustes nos plugins Vlibras e acessibilidade.
+- Ajustes visuais nos jogos: cores e números.
 
-# Versão 0.4.1
+### Versão 0.4.1
 **7 de outubro de 2024**: 
-- ultimos ajustes na homepage
-- ajustes no login
+- Últimos ajustes na homepage.
+- Ajustes no login.
 
-# Versão 0.4.0
+### Versão 0.4.0
 **6 de outubro de 2024**: 
-- implementação do login
-- implementação do cadastro
+- Implementação do login.
+- Implementação do cadastro.
 
-# Versão 0.3.1
+### Versão 0.3.1
 **25 de setembro de 2024**: 
-- correção de erros
+- Correção de erros.
 
-# Versão 0.3.0
+### Versão 0.3.0
 **23 de setembro de 2024**: 
-- implementação do jogo das cores
+- Implementação do jogo das cores.
 
-# Versão 0.2.0
+### Versão 0.2.0
 **22 de setembro de 2024**: 
-- implementação do jogo das vogais
+- Implementação do jogo das vogais.
 
-# Versão 0.1.2
+### Versão 0.1.2
 **20 de setembro de 2024**: 
-- ajustes na homepage
-- ajustes nas rotas
+- Ajustes na homepage.
+- Ajustes nas rotas.
 
-# Versão 0.1.1
+### Versão 0.1.1
 **16 de setembro de 2024**: 
-- implementação da homepage
-- implementação vanilla do jogo da memoria
-- reorganização na estrutura de todo o projeto
-- adição de rotas
-- ajustes no jogo dos numeros
+- Implementação da homepage.
+- Implementação vanilla do jogo da memória.
+- Reorganização na estrutura de todo o projeto.
+- Adição de rotas.
+- Ajustes no jogo dos números.
 
-# Versão 0.0.1
+### Versão 0.0.1
 **15 de setembro de 2024**: 
-- implementação do jogo dos numeros
+- Implementação do jogo dos números.
 
-# Versão 0.0.0
+### Versão 0.0.0
 **1 de setembro de 2024**: 
-- implementação do framework React
+- Implementação do framework React.
 
 **18 de agosto de 2024**: 
-- Inicio do Repositório
+- Início do repositório.
