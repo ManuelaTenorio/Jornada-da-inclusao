@@ -1,4 +1,4 @@
-/* :root {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -46,9 +47,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,30 +62,17 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
-} */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* ========================Estilizações globais======================= */
-
-:root {
-  --main-color: #263BFC;
-  --text-color: #000000;
-  --bg-color-1: #ffffff;
-  --bg-color-2: #AFDCFF;
-  --color-00: #0000001a;
-
-  --color-01: #999999;
-  --color-02: #009539;
-  --color-03: #7950f2;
-  --color-04: #c00000;
-  --color-05: #232323;
 }
+
+/* ========================/Estilizações globais======================= */
 
 * {
   border: none;

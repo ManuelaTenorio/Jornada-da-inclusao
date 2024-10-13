@@ -1,8 +1,8 @@
-# PI - Jornada da Inclusão 
+# React + Vite
 
 ## Sobre
 
-O projeto Jornada da Inclusão, será desenvolvido para identificar e atender as necessidades específicas de cada criança, que possui dificuldades de inclusão, nos ambientes escolares. 
+Currently, two official plugins are available:
 
 Haverá a utilização de uma combinação de avaliações interativas e personalizadas, além de métodos de ensino, com recursos e atividades que auxiliem, principalmente, nos processos de alfabetização e identificação dos números. 
 

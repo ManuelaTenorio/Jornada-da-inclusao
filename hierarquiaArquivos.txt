@@ -1,0 +1,43 @@
+/public
+│
+├── index.html        # Arquivo HTML principal (ponto de entrada para o React)
+├── favicon.ico       # Ícone da aplicação
+└── manifest.json     # Informações sobre o app (Progressive Web App - PWA)
+/src
+│
+├── /assets
+│   ├── /images
+│   ├── /fonts
+│   └── /styles
+│
+├── /components
+│   ├── /Button
+│   ├── /Header
+│   └── /Footer
+│
+├── /pages
+│   ├── /Home
+│   ├── /About
+│   └── /Contact
+│
+├── /context
+│   └── AuthContext.js
+│
+├── /hooks
+│   └── useAuth.js
+│
+├── /services
+│   └── api.js
+│
+├── /utils
+│   └── formatDate.js
+│
+├── /store
+│   └── store.js
+│
+├── /routes
+│   └── AppRoutes.js
+│
+├── App.js            # Componente raiz da aplicação
+├── index.js          # Arquivo de entrada principal (renderiza a aplicação no HTML)
+└── index.css         # CSS global
