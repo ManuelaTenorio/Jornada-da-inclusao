@@ -22,15 +22,15 @@ export default function JogoNumeros() {
     );
 
     return (
-        <>
-            <div className={classes.container}>
-                <h1>Jogo dos Números</h1>
-                <p>Arraste os números para cima na sequência correta.</p>
+        <div className={classes.wrapper}>
+            <section className={classes.container}>
+                <h1 className={classes.heading}>Jogo dos Números</h1>
+                <p className={classes.paragraph}>Arraste os números para cima na sequência correta.</p>
                 <DropBox />
                 <div className={classes.numberGrid}>
                     {listElements}
                 </div>
-            </div >
-        </>
+            </section>
+        </div>
     )
 }

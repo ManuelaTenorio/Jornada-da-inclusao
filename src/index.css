@@ -93,6 +93,7 @@ button:focus-visible {
   scroll-behavior: smooth;
   text-decoration: none;
 }
+
 html {
   font-family: Inter, Arial, sans-serif;
   font-size: 16px;
