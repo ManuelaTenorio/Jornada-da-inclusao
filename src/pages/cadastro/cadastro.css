@@ -1,4 +1,10 @@
-
+.bodyCad {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 /* Container do formulário */
 .form-container {
@@ -9,8 +15,6 @@
     border-radius: 8px; /* Bordas mais retangulares */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.60); /* Sombra sutil */
     text-align:inherit;
-    
-
 }
 
 /* Título do formulário */
@@ -42,7 +46,7 @@ h1 {
     width: 150px; /* Ajustar a largura conforme necessário */
 }
 
-input[type="email"], input[type="password"], input[type="text"] {
+.inputCad {
     padding: 10px; /* Inputs maiores */
     font-size: 1rem;
     border: 5px solid #ddd;
@@ -73,8 +77,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #770c0c;
 }
-
-/* Outros estilos */
 
 p {
     margin-top: 10px; /* Margem superior para separar os parágrafos de outros elementos */
