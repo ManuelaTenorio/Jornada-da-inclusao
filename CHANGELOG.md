@@ -50,5 +50,6 @@ Este projeto utiliza [Git](https://git-scm.com/) para controle de versão. Abaix
 # Versão 0.0.0
 **1 de setembro de 2024**: 
 - implementação do framework React
+
 **18 de agosto de 2024**: 
 - Inicio do Repositório
