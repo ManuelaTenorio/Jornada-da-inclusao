@@ -6,7 +6,7 @@ import './Cadastro.css'
 import React from 'react'
 
 function Cadastro() {
-  
+
   // Hook para navegar entre as páginas, usado para redirecionar o usuário.
   const navigate = useNavigate()
 
@@ -133,10 +133,23 @@ function Cadastro() {
               <input type="submit" value="Cadastrar" />
 
               <p>Já tem cadastro?<a href="/login">  Faça seu login</a></p>
+              <p><a href="/">Voltar Para Home</a></p>
             </div>
           </form>
         </div>
       </div>
+      <div className="enabled">
+        <div className="active" vw-access-button></div>
+        <div vw-plugin-wrapper>
+          <div className="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
     </>
   )
 }

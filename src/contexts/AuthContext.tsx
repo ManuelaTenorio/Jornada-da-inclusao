@@ -58,7 +58,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     // Retorna o provedor de autenticação com o valor do contexto.
     return (
         <AuthContext.Provider value={{ usuario, handleLogin, handleLogout, isLoading }}>
-            {children} // Renderiza os filhos do provedor.
+            {children}
         </AuthContext.Provider>
     );
 }
