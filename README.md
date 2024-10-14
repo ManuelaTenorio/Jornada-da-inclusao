@@ -36,7 +36,7 @@ O objetivo principal, é melhorar o desempenho individual das crianças, podendo
 ### Frameworks
 [![My Skills](https://skillicons.dev/icons?i=spring&perline=3)](https://skillicons.dev)
 
-## Paleta de cores [ arrumando... ]
+## Paleta de cores
 
 | Cor        | Hexadecimal                                                |
 |------------|------------------------------------------------------------|
