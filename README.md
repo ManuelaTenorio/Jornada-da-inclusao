@@ -40,14 +40,14 @@ O objetivo principal, é melhorar o desempenho individual das crianças, podendo
 
 | Cor        | Hexadecimal                                                |
 |------------|------------------------------------------------------------|
-| Cor 1     | ![#f0f0f0](https://via.placeholder.com/10/f0f0f0?text=+) #f0f0f0 |
-| Cor 2     | ![#d3d3d3](https://via.placeholder.com/10/d3d3d3?text=+) #d3d3d3 |
-| Cor 3     | ![#a9a9a9](https://via.placeholder.com/10/a9a9a9?text=+) #a9a9a9 |
-| Cor 4     | ![#a6a6a6](https://via.placeholder.com/10/a6a6a6?text=+) #a6a6a6 |
-| Cor 5     | ![#8c8c8c](https://via.placeholder.com/10/8c8c8c?text=+) #8c8c8c |
-| Branco     | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
-| Preto      | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
-| Vermelho   | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) #FF0000 |
+| Cor 1     | ![#f0f0f0](https://via.placeholder.com/10/f0f0f0?text=+) `#f0f0f0` |
+| Cor 2     | ![#d9d9d9](https://via.placeholder.com/10/d9d9d9?text=+) `#d9d9d9` |
+| Cor 3     | ![#bfbfbf](https://via.placeholder.com/10/bfbfbf?text=+) `#bfbfbf` |
+| Cor 4     | ![#a6a6a6](https://via.placeholder.com/10/a6a6a6?text=+) `#a6a6a6` |
+| Cor 5     | ![#8c8c8c](https://via.placeholder.com/10/8c8c8c?text=+) `#8c8c8c` |
+| Branco     | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
+| Preto      | ![#000000](https://via.placeholder.com/10/000000?text=+) `#000000` |
+| Vermelho   | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) `#FF0000` |
 
 ## Dependências Node
 O projeto usa dependencias do NodeJS, para usa-lo, execute o seguinte comando no terminal:
