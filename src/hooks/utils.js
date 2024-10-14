@@ -25,6 +25,6 @@ export function random(item) {
 			throw new TypeError;
 		}
 	} catch (err) {
-		console.log("random function only accepts numbers and arrays");
+		console.log(`random function expects numbers and arrays, received ${typeof item} instead`);
 	}
 }
