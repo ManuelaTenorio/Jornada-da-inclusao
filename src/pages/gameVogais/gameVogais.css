@@ -1,24 +1,26 @@
 .result {
     height: 300px;
+    
 }
 
 .resultLetter {
-    background-color: rgb(180, 180, 180);
+    background-color: #C0C0C0;
     margin: 40px;
-    height: 200px;
+    height: 300px;
     width: 70%;
     border-radius: 7px;
-    border-color: black;
+    border-color: #222222;
     border-style: groove;
     border: 10px;
 }
 
 .gameContent {
     border-radius: 10px;
-    border-color: #7aa74d;
+    border-color: #3C5742;
+    background-color: #82BD8F;
     border-style: groove;
     width: 800px;
-    box-shadow: 2px 2px #7aa74d;
+    box-shadow: 2px 2px #5F8A68;
     /* background-color: rgba(135, 161, 106, 0.927); */
 }
 
@@ -33,8 +35,8 @@
     background-size: contain;
     /* background-position: center; */
     background-repeat: no-repeat;
-    height: 300px;
-    width: 85%;
+    height: 290px;
+    width: 100%;
     margin-left: 88%;
 }
 
@@ -45,19 +47,9 @@
     align-content: center;
 }
 
-.letters {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40px, 3fr));
-    gap: 10px;
-    margin: 10px;
-    border-color: black;
-    border-style: solid;
-    border: 20px;
-}
-
 .letterInDroppable{
-    background-color: rgb(201, 201, 201);
-    color: rgb(80, 117, 43);
+    background-color: #93D6A2;
+    color: rgb(0, 0, 0);
     width: 50px;
     height: 50px;
     border-radius: 7px;
@@ -67,7 +59,7 @@
 }
 
 .dropaArea{
-    margin: 3%;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 3fr));
     gap: 10px;

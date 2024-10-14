@@ -1,11 +1,11 @@
 .bodyGame {
     height: 100%;
-    width: 100%;
-    margin-top: 50px;
+    width: 100%;    
 }
 
 .result {
     height: 300px;
+    
 }
 
 .phrase {
@@ -14,4 +14,9 @@
     p{
         text-align: center;
     }
+}
+
+.dropaArea{
+    
+    height: 50px;
 }

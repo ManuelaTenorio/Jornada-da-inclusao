@@ -38,7 +38,7 @@ function FaceJogoVogais() {
                 <div className='dropaArea'>
                     {/* Exibe as letras que foram arrastadas para a área de soltura. */}
                     {droppedLetters.map(letter => (
-                        <div key={letter.id} className="letterInDroppable">
+                        <div key={letter.id} id={"num"+letter.id} className="letterInDroppable">
                             {String.fromCharCode(64 + letter.value)} {/* Converte o valor numérico para a letra correspondente. */}
                         </div>
                     ))}
@@ -63,7 +63,7 @@ function FaceJogoVogais() {
             const letterToDrop = letters.find(letter => letter.id === active.id);
 
             // Verifica se a letra ainda não foi solta anteriormente.
-            if (letterToDrop && !droppedLetters.some(letter => letter.id === letterToDrop.id) && letterToDrop.id === 1 || letterToDrop.id === 5 || letterToDrop.id === 9 || letterToDrop.id === 15 || letterToDrop.id === 21){
+            if (letterToDrop && !droppedLetters.some(letter => letter.id === letterToDrop.id) && letterToDrop.id === 1 || letterToDrop.id === 5 || letterToDrop.id === 9 || letterToDrop.id === 15 || letterToDrop.id === 21) {
                 setDroppedLetters(prev => [...prev, letterToDrop]); // Adiciona a letra à lista de letras soltas.
                 setLetters(prevLetters => prevLetters.filter(letter => letter.id !== letterToDrop.id)); // Remove a letra da lista de letras arrastáveis.
             }
@@ -71,23 +71,37 @@ function FaceJogoVogais() {
     };
 
     return (
-        <div className='bodyGame'>
-            <div className='game'>
-                <div className='gameContent'>
-                    <div className="phrase">
-                        <p>ARRASTE PARA CIMA APENAS AS LETRAS VOGAIS</p>
+
+        <>
+            <div className='bodyGame'>
+                <div className='game'>
+                    <div className='gameContent'>
+                        <div className="phrase">
+                            <p>ARRASTE PARA CIMA APENAS AS LETRAS VOGAIS</p>
+                        </div>
+                        <DndContext
+                            sensors={sensors}
+                            collisionDetection={closestCorners}
+                            onDragEnd={handleDragEnd}
+                        >
+                            <DroppableArea />
+                            <GameVogais letters={letters} /> {/* Componente que renderiza as letras arrastáveis. */}
+                        </DndContext>
                     </div>
-                    <DndContext
-                        sensors={sensors}
-                        collisionDetection={closestCorners}
-                        onDragEnd={handleDragEnd}
-                    >
-                        <DroppableArea />
-                        <GameVogais letters={letters} /> {/* Componente que renderiza as letras arrastáveis. */}
-                    </DndContext>
                 </div>
             </div>
-        </div>
+            <div className="enabled">
+                <div className="active" vw-access-button></div>
+                <div vw-plugin-wrapper>
+                    <div className="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+        </>
     );
 }
 
