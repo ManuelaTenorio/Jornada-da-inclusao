@@ -16,7 +16,7 @@ function Login() {
   const [usuarioLogin, setUsuarioLogin] = useState<UsuarioLogin>(
     {} as UsuarioLogin // Inicializa o estado com um objeto vazio que segue a interface `UsuarioLogin`.
   );
-  
+
   // Hook de efeito que redireciona o usuário para a página '/home' se o login for bem-sucedido e um token for retornado.
   useEffect(() => {
     if (usuario && usuario.token !== "") {
@@ -43,38 +43,49 @@ function Login() {
   return (
     <>
       <div className="bodyLogin">
-      <div id="login-container">
-        <h1></h1>
-        <form id="login-form" onSubmit={login}>
-          <div className="full-box">
-            <label htmlFor="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Digite seu e-mail"
-              required
-              value={usuarioLogin.email}
-              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-            />
-          </div>
-          <div className="full-box">
-            <label htmlFor="password">Senha</label>
-            <input
-              type="password"
-              id="senha"
-              name="senha"
-              placeholder="Digite sua senha"
-              required
-              value={usuarioLogin.senha}
-              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-            />
-          </div>
-          <input type="submit" value="Entrar" />
-          <p>Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
-        </form>
+        <div id="login-container">
+          <h1></h1>
+          <form id="login-form" onSubmit={login}>
+            <div className="full-box">
+              <label htmlFor="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+                value={usuarioLogin.email}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+              />
+            </div>
+            <div className="full-box">
+              <label htmlFor="password">Senha</label>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+                value={usuarioLogin.senha}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+              />
+            </div>
+            <input type="submit" value="Entrar" />
+            <p>Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
+          </form>
+        </div>
       </div>
+      <div className="enabled">
+        <div className="active" vw-access-button></div>
+        <div vw-plugin-wrapper>
+          <div className="vw-plugin-top-wrapper"></div>
+        </div>
       </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
     </>
   )
 }
