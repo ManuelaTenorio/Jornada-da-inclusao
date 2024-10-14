@@ -48,7 +48,7 @@ function FaceJogoVogais() {
                 </div>
             </div>
         );
-    };
+    }; 
 
     // Função chamada quando o usuário solta um item após arrastá-lo.
     const handleDragEnd = (event) => {
@@ -90,6 +90,9 @@ function FaceJogoVogais() {
                     </div>
                 </div>
             </div>
+            {/* <div className="btnJogos">
+                <a href="/jogo-cores"><button href>Proximo Jogo</button></a>
+            </div> */}
             <div className="enabled">
                 <div className="active" vw-access-button></div>
                 <div vw-plugin-wrapper>

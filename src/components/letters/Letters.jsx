@@ -23,7 +23,7 @@ function Letters({ id, value }) {
   const dynamicStyles = {
     transform: CSS.Translate.toString(transform), // Aplica a transformação de posição
     transition, // Aplica a transição
-  };
+  }; 
 
   return (
     <div className='letters'>

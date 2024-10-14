@@ -9,6 +9,24 @@ body {
     margin: 0;
     background-color: var(--color-2);
 }
+
+.btnJogos{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        border-radius: 5px;
+        border: 0;
+        font-size: x-large;
+        background-color: rgb(201, 201, 201);
+    }
+    :hover{
+        background-color: rgb(177, 177, 177);
+        border-radius: 7px;
+        border: 0;
+    }
+}
 /* 
 .primary {
     --clr-primary-500: #93D6A2;
