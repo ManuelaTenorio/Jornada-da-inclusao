@@ -44,7 +44,7 @@ Este projeto utiliza [Git](https://git-scm.com/) para controle de versão. Abaix
 - Adição de rotas.
 - Ajustes no jogo dos números.
 
-### Versão 0.0.1
+### Versão 0.1.0
 **15 de setembro de 2024**: 
 - Implementação do jogo dos números.
 
