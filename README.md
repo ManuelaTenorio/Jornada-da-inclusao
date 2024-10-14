@@ -6,10 +6,17 @@ Haverá a utilização de uma combinação de avaliações interativas e persona
 O objetivo principal, é melhorar o desempenho individual das crianças, podendo promover uma educação de qualidade e reduzir assim a desigualdade educacional, visando atingir os Objetivos de Desenvolvimento Sustentável (ODS) 4 e 10.
 
 ## ODS
-<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-4.svg" alt="alt text" width="200" style="margin-right: 10px;">
-- Objetivo 4. Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos
-<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-10.svg" alt="alt text" width="200">
-- Objetivo 10. Reduzir a desigualdade dentro dos países e entre eles
+<a href="https://brasil.un.org/pt-br/sdgs/4" target="_blank">
+    <img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-4.svg" alt="alt text" width="200" style="margin-right: 10px;">
+</a>
+<a href="https://brasil.un.org/pt-br/sdgs/10" target="_blank">
+    <img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-10.svg" alt="alt text" width="200">
+</a>
+
+
+- Objetivo 4. Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos.
+
+- Objetivo 10. Reduzir a desigualdade dentro dos países e entre eles.
 
 ## Integrantes
 - [Gabriel Dourado dos Santos](https://github.com/gabrieldourado21) 
@@ -29,8 +36,20 @@ O objetivo principal, é melhorar o desempenho individual das crianças, podendo
 ### Frameworks
 [![My Skills](https://skillicons.dev/icons?i=spring&perline=3)](https://skillicons.dev)
 
+## Paleta de cores [ arrumando... ]
 
-## Modulos Node
+| Cor        | Hexadecimal                                                |
+|------------|------------------------------------------------------------|
+| Cor 1     | ![#f0f0f0](https://via.placeholder.com/10/f0f0f0?text=+) #f0f0f0 |
+| Cor 2     | ![#d3d3d3](https://via.placeholder.com/10/d3d3d3?text=+) #d3d3d3 |
+| Cor 3     | ![#a9a9a9](https://via.placeholder.com/10/a9a9a9?text=+) #a9a9a9 |
+| Cor 4     | ![#a6a6a6](https://via.placeholder.com/10/a6a6a6?text=+) #a6a6a6 |
+| Cor 5     | ![#8c8c8c](https://via.placeholder.com/10/8c8c8c?text=+) #8c8c8c |
+| Branco     | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Preto      | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
+| Vermelho   | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) #FF0000 |
+
+## Dependências Node
 O projeto usa dependencias do NodeJS, para usa-lo, execute o seguinte comando no terminal:
 ```bash
   npm install
@@ -39,5 +58,26 @@ E para rodar no navegador, utilize:
 ```bash
   npm run dev
 ```
+
+## Screenshots [ A definir ]
+### Página inicial
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Login
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Cadastro
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Jogo dos Números
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Jogo das Cores
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Jogo das Vogais
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Jogo da Memória
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+## Hospedagem [ a definir ]
+
+## Versionamento
+As versões do projeto podem ser visualizadas através do `CHANGELOG.md`
 
 
