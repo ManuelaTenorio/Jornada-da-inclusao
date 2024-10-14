@@ -9,11 +9,7 @@ body {
     margin: 0;
     background-color: var(--color-2);
 }
-
-.tese{
-    background-color: #67abff;
-}
-
+/* 
 .primary {
     --clr-primary-500: #93D6A2;
     --clr-primary-600: #3C5742;
@@ -29,7 +25,7 @@ body {
 }
 
 .neutralHigh {
-    /* high */
+    
     --clr-neutral-100: #F0F0F0;
     --clr-neutral-200: #C0C0C0;
     --clr-neutral-300: #D0D0D0;
@@ -37,7 +33,7 @@ body {
 }
 
 .neutralLow {
-    /* low */
+    
     --clr-neutral-500: #222222;
     --clr-neutral-600: #333333;
     --clr-neutral-700: #474747;
@@ -70,4 +66,4 @@ body {
     --clr-danger-600: #DB8B7B;
     --clr-danger-700: #A86B5E;
     --clr-danger-800: #754A42;
-}
+} */

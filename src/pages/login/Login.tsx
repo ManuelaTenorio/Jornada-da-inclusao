@@ -72,6 +72,7 @@ function Login() {
             </div>
             <input type="submit" value="Entrar" />
             <p>Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
+            <p><a href="/">Voltar Para Home</a></p>
           </form>
         </div>
       </div>

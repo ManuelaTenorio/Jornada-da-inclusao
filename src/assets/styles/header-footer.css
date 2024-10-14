@@ -28,12 +28,27 @@ li > img {
     cursor: pointer;
 }
 
+.head .link-styles:last-child{
+    background-color: var(--red);
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: var(--white);
+    border: 2px solid var(--red);
+    transition: 0.5s;
+}
+
+.head .link-styles:last-child:hover{
+    background-color: var(--white);
+    color: var(--red);
+    transition: 0.5s;
+}
+
 li > select {
     width: 20px;
 }
 
-li > input:hover {
-    border-bottom: 2.5px solid red;
+li:not(:first-child):not(:last-child):hover {
+    border-bottom: 2.5px solid var(--red);
     margin-top: 2.5px;
     transition: 0.1s;
 }
