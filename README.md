@@ -59,7 +59,7 @@ E para rodar no navegador, utilize:
   npm run dev
 ```
 
-## Screenshots [ A definir ]
+## Screenshots [ Incompleto ]
 ### Página inicial
 ![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/home.png)
 ### Login
@@ -74,8 +74,6 @@ E para rodar no navegador, utilize:
 ![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/vogais.png)
 ### Jogo da Memória
 [ a obter ]
-
-## Hospedagem [ a definir ]
 
 ## Versionamento
 As versões do projeto podem ser visualizadas através do `CHANGELOG.md`
