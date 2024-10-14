@@ -1,0 +1,67 @@
+{
+  "hash": "04fe629d",
+  "configHash": "5003cea7",
+  "lockfileHash": "ed8a07cb",
+  "browserHash": "39a37f47",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "e12dd46c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "e93c391d",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "2845f9cd",
+      "needsInterop": false
+    },
+    "@dnd-kit/core": {
+      "src": "../../node_modules/@dnd-kit/core/dist/core.esm.js",
+      "file": "@dnd-kit_core.js",
+      "fileHash": "1b90a6dd",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "e0094dfa",
+      "needsInterop": false
+    },
+    "@dnd-kit/sortable": {
+      "src": "../../node_modules/@dnd-kit/sortable/dist/sortable.esm.js",
+      "file": "@dnd-kit_sortable.js",
+      "fileHash": "8bf7c842",
+      "needsInterop": false
+    },
+    "@dnd-kit/utilities": {
+      "src": "../../node_modules/@dnd-kit/utilities/dist/utilities.esm.js",
+      "file": "@dnd-kit_utilities.js",
+      "fileHash": "e668f944",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-NCQAQ4Y2": {
+      "file": "chunk-NCQAQ4Y2.js"
+    },
+    "chunk-TNTPHDQH": {
+      "file": "chunk-TNTPHDQH.js"
+    },
+    "chunk-NX4L7PQH": {
+      "file": "chunk-NX4L7PQH.js"
+    },
+    "chunk-32E4H3EV": {
+      "file": "chunk-32E4H3EV.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
