@@ -61,17 +61,17 @@ E para rodar no navegador, utilize:
 
 ## Screenshots [ Incompleto ]
 ### Página inicial
-![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/home.png)
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/home.png)
 ### Login
-![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/login.png)
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/login.png)
 ### Cadastro
-![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/cadastro.png)
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/cadastro.png)
 ### Jogo dos Números
-![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/numeros.png)
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/numeros.png)
 ### Jogo das Cores
-![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/cores.png)
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/cores.png)
 ### Jogo das Vogais
-![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/dev/screenshots/vogais.png)
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/vogais.png)
 ### Jogo da Memória
 [ a obter ]
 
