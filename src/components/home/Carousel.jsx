@@ -18,7 +18,7 @@ const Carousel = () => {
   }, [images.length]);
 
   return (
-    <div className="carousel" id="pagina-principal">
+    <div className="carousel" id="inicio-section">
       <input type="radio" name="carousel" id="item-1" checked={currentIndex === 0} readOnly />
       <input type="radio" name="carousel" id="item-2" checked={currentIndex === 1} readOnly />
       <input type="radio" name="carousel" id="item-3" checked={currentIndex === 2} readOnly />

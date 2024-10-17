@@ -2,7 +2,7 @@ import '../../assets/styles/Contact.css';
 
 const Contact = () => {
   return (
-    <section className="contact-container" id='contato'>
+    <section className="contact-container" id='contato-section'>
       <h2>Entre em Contato Conosco</h2>
       <form className="contact-form">
         <label htmlFor="name">Nome:</label>

@@ -7,10 +7,10 @@ import card4 from '../../assets/images/little_prince.png';
 
 const About = () => {
   return (
-    <section className="about-container">
+    <section className="about-container" id='sobre-section'>
       <h2>Nossa Página</h2>
 
-      <div className="about-content" id='sobre-nos'>
+      <div className="about-content">
         <div className="about-item">
           <img
             src={card1}

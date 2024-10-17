@@ -3,36 +3,29 @@ import { Link } from 'react-router-dom';
 import '../../assets/styles/header-footer.css';
 import PiLogo from '../../assets/images/Pi LOGO.png';
 
-function Header() {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      const headerOffset = 150; // Ajuste esse valor conforme a altura do seu cabeçalho
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-
+export default function Header() {
   return (
-    <div className="head">
-      <li>
-        <img src={PiLogo} alt="Logo da página Integra Kids, ilustrando um jogo educativo" />
-      </li>
-      <li onClick={() => scrollToSection('pagina-principal')} className="link-styles">Inicio</li>
-      <li onClick={() => scrollToSection('lista-jogos')} className="link-styles">Jogos</li>
-      <li onClick={() => scrollToSection('sobre-nos')} className="link-styles">Sobre</li>
-      <li onClick={() => scrollToSection('contato')} className="link-styles">Contato</li>
-      <li><Link className={"link-styles"} to="/login">Login</Link></li>
-    </div>
+    <header className="header-bar">
+      <nav className="nav-bar container">
+        <img className="logo" src={PiLogo} alt="Logo da página Integra Kids, ilustrando um jogo educativo" />
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a className="link" href="#inicio-section">Inicio</a>
+          </li>
+          <li className="nav-item">
+            <a className="link" href="#jogos-section">Jogos</a>
+          </li>
+          <li className="nav-item">
+            <a className="link" href="#sobre-section">Sobre</a>
+          </li>
+          <li className="nav-item">
+            <a className="link" href="#contato-section">Contato</a>
+          </li>
+          <li className="nav-item">
+            <Link className="link form-button" to="/login">Login</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
-
-export default Header;
-
-

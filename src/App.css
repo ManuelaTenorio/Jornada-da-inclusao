@@ -89,6 +89,13 @@ body {
   margin: auto;
 }
 
+#inicio-section,
+#jogos-section,
+#sobre-section,
+#contato-section {
+  scroll-margin-top: 5rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

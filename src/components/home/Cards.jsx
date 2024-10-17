@@ -8,7 +8,7 @@ import number from '../../assets/images/numbers.png';
 
 const Cards = () => {
     return (
-        <div className="cards-container" id='lista-jogos'>
+        <div className="cards-container" id='jogos-section'>
             <Link className='link-styles' to="/jogo-numeros">
             <div className="card">
                 <img src={number} alt="Card 1" />
