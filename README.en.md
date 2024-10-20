@@ -1,4 +1,5 @@
 # PI - Journey of Inclusion 
+For the Portuguese version, see [README.md](README.md).
 
 ## Index
 - [About](#about)
