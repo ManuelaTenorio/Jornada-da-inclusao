@@ -6,10 +6,11 @@ import About from '../components/home/About.jsx';
 import Footer from "../components/home/Footer.jsx"
 
 import '../assets/styles/home.css';
-
+import backgroundImage from '../assets/images/background-home.jpg';
 
 const Home = () => (
-  <div className="home">
+  <div className="home" style={{
+    backgroundImage: `url(${backgroundImage})`}}>
     <Header />
     <Carousel />
     <h1>Confira os jogos da nossa plataforma</h1>
