@@ -11,10 +11,10 @@
   - [Frameworks](#frameworks)
   - [Hosting](#hosting)
 - [Paleta de cores](#paleta-de-cores)
-- [Dependências Node](#dependencias-node)
+- [Dependências Node](#dependências-node)
 - [Screenshots](#screenshots)
 - [Bugs encontrados](#bugs-encontrados)
-- [Considerações finais](#consideracoes-finais)
+- [Considerações finais](#considerações-finais)
 
 
 ## Sobre
