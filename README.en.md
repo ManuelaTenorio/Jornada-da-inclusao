@@ -72,6 +72,10 @@ The project uses Node.js dependencies. To use it, run the following command in t
 ```bash
 npm install
 ```
+And to run it in the browser, use:
+```bash
+  npm run dev
+```
 
 ## Screenshots
 Below are some screenshots of our project during its development stage.
