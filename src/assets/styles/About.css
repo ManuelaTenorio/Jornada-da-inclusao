@@ -45,6 +45,7 @@
   line-height: 1.6;
   color: var(--black);
   margin: 0;
+  text-align: justify;
 }
 
 /* Media Queries para Responsividade */
