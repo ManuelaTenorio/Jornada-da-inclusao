@@ -1,11 +1,30 @@
 # PI - Jornada da Inclusão 
 
+## Índice
+- [Sobre](#sobre)
+- [ODS](#ods)
+- [Integrantes](#integrantes)
+- [Tecnologias](#tecnologias)
+  - [Front-End](#front-end)
+  - [Back-End](#back-end)
+  - [IDEs](#ides)
+  - [Frameworks](#frameworks)
+  - [Hosting](#hosting)
+- [Paleta de cores](#paleta-de-cores)
+- [Dependências Node](#dependencias-node)
+- [Screenshots](#screenshots)
+- [Bugs encontrados](#bugs-encontrados)
+- [Considerações finais](#consideracoes-finais)
+
+
 ## Sobre
 O projeto Jornada da Inclusão, será desenvolvido para identificar e atender as necessidades específicas de cada criança, que possui dificuldades de inclusão, nos ambientes escolares. 
 Haverá a utilização de uma combinação de avaliações interativas e personalizadas, além de métodos de ensino, com recursos e atividades que auxiliem, principalmente, nos processos de alfabetização e identificação dos números. 
 O objetivo principal, é melhorar o desempenho individual das crianças, podendo promover uma educação de qualidade e reduzir assim a desigualdade educacional, visando atingir os Objetivos de Desenvolvimento Sustentável (ODS) 4 e 10.
 
 ## ODS
+Este projeto visa contribuir diretamente para os seguintes ODS:
+
 <a href="https://brasil.un.org/pt-br/sdgs/4" target="_blank">
     <img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-4.svg" alt="alt text" width="200" style="margin-right: 10px;">
 </a>
@@ -14,9 +33,9 @@ O objetivo principal, é melhorar o desempenho individual das crianças, podendo
 </a>
 
 
-- Objetivo 4. Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos.
+- **Objetivo 4**: Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos.
+- **Objetivo 10**: Reduzir a desigualdade dentro dos países e entre eles, promovendo uma educação acessível a todos.
 
-- Objetivo 10. Reduzir a desigualdade dentro dos países e entre eles.
 
 ## Integrantes
 - [Gabriel Dourado dos Santos](https://github.com/gabrieldourado21) 
@@ -35,6 +54,9 @@ O objetivo principal, é melhorar o desempenho individual das crianças, podendo
 [![My Skills](https://skillicons.dev/icons?i=vscode,mongodb,&perline=3)](https://skillicons.dev) 
 ### Frameworks
 [![My Skills](https://skillicons.dev/icons?i=spring&perline=3)](https://skillicons.dev)
+### Hosting
+[![My Skills](https://skillicons.dev/icons?i=firebase&perline=3)](https://skillicons.dev)
+
 
 ## Paleta de cores
 
@@ -59,7 +81,10 @@ E para rodar no navegador, utilize:
   npm run dev
 ```
 
-## Screenshots [ Incompleto ]
+## Screenshots
+veja a seguir algumas capturas de tela de nosso projeto durante sua etapa de desenvolvimento. 
+
+Obs: algumas telas podem está desatualizadas ou faltando, e serão corrigidas posteriormente.
 ### Página inicial
 ![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/home.png)
 ### Login
@@ -74,8 +99,21 @@ E para rodar no navegador, utilize:
 ![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/vogais.png)
 ### Jogo da Memória
 [ a obter ]
+### Página de perfil
+[ a obter ]
 
 ## Versionamento
 As versões do projeto podem ser visualizadas através do `CHANGELOG.md`
 
+## Hospedagem
+O sistema encontra-se hospedado através do Firebase Hosting, podendo ser acessado através do seguinte link:
+https://integrakids.web.app
 
+## bugs encontrados
+- o formulário de contato na homepage informa que a solicitação deu erro, porém os dados são enviados normalmente
+- o jogo dos numeros está ordenando os numeros de forma vertical, em vez de horizontal
+- o jogo das vogais não capta corretamente algumas letras
+- falta alguns ajustes na responsividade do sistema em geral
+
+## Considerações finais
+Nós, colaboradores do projeto 'Jornada da Inclusão', agradecemos a contribuição e a orientação dos docentes das disciplinas que participaram desse projeto Integrador, e aos nossos colegas de turma e de outros ciclos que prestigiaram nossa apresentação e acessaram esse repositório para compreender melhor nosso projeto. 
