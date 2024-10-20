@@ -1,5 +1,5 @@
 # PI - Jornada da Inclusão 
-
+Para a versão em inglês, veja [README.en.md](README.en.md).
 ## Índice
 - [Sobre](#sobre)
 - [ODS](#ods)
