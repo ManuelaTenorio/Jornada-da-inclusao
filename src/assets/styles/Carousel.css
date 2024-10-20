@@ -25,17 +25,17 @@
   flex: 100%;
   width: 100%;
   height: 100%;
-  display: flex; /* Centraliza a imagem dentro do container */
+  display: flex; 
   align-items: center;
   justify-content: center;
 }
 
 .carousel-item img {
   width: 100vw;
-  height: 100%; /* Mantém a proporção da imagem */
-  object-fit: cover; /* Garante que a imagem se ajuste sem cortar */
+  height: 100%; 
+  object-fit: cover; 
   display: block;
-  max-height: 100%; /* Limita a altura da imagem para o banner */
+  max-height: 100%; 
 }
 
 input[type="radio"] {
@@ -76,4 +76,36 @@ input[type="radio"] {
 #item-2:checked ~ .controls label[for="item-2"],
 #item-3:checked ~ .controls label[for="item-3"] {
   background-color: #333;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .carousel {
+    height: 60vh;
+  }
+
+  .controls {
+    bottom: 5px; 
+  }
+
+  .controls label {
+    width: 8px; 
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 50vh; 
+    padding-top: 40px; 
+  }
+
+  .controls {
+    bottom: 5px; 
+  }
+
+  .controls label {
+    width: 6px; 
+    height: 6px;
+  }
 }

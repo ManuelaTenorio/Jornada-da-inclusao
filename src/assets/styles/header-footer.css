@@ -1,6 +1,7 @@
 @import url('color_pallete.css');
 
 div.head {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
