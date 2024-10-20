@@ -50,17 +50,23 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
   .contact-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 18px;
+
+    background-color: var(--red);
+    padding: 10px 180px;
+    border-radius: 25px;
+    color: var(--white);
+    border: 2px solid var(--red);
+    transition: 0.5s;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    font-weight: bolder;
+    font-family: sans-serif;
   }
   
   .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: var(--white);
+    color: var(--red);
+    transition: 0.5s;
   }
   

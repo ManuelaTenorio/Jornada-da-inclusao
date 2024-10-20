@@ -1,9 +1,5 @@
 @import url('color_pallete.css');
 
-div.home{
-    background-image: url(../src/assets/images/background-home.jpg);
-}
-
 .home h1{
     text-align: center;
     font-family: sans-serif;
