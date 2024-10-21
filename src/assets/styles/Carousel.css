@@ -4,38 +4,44 @@
   box-sizing: border-box;
 }
 
-.carousel {
+.carousel-section {
   width: 100%;
   height: 80vh;
   padding-top: 80px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  background-color: var(--white); 
+  background-color: var(--white);
 }
 
 .carousel-inner {
   display: flex;
-  width: 100%; /* 3 slides = 300% da largura */
+  width: 100%;
+  /* 3 slides = 300% da largura */
   height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-  flex: 100%;
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex; /* Centraliza a imagem dentro do container */
+  /* flex: 100%; */
+  /* Centraliza a imagem dentro do container */
   align-items: center;
   justify-content: center;
 }
 
 .carousel-item img {
   width: 100vw;
-  height: 100%; /* Mantém a proporção da imagem */
-  object-fit: cover; /* Garante que a imagem se ajuste sem cortar */
+  height: 100%;
+  /* Mantém a proporção da imagem */
+  object-fit: cover;
+  /* Garante que a imagem se ajuste sem cortar */
   display: block;
-  max-height: 100%; /* Limita a altura da imagem para o banner */
+  max-height: 100%;
+  /* Limita a altura da imagem para o banner */
+  max-width: none;
 }
 
 input[type="radio"] {
@@ -60,20 +66,20 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-#item-1:checked ~ .carousel-inner {
+#item-1:checked~.carousel-inner {
   transform: translateX(0%);
 }
 
-#item-2:checked ~ .carousel-inner {
+#item-2:checked~.carousel-inner {
   transform: translateX(-100%);
 }
 
-#item-3:checked ~ .carousel-inner {
+#item-3:checked~.carousel-inner {
   transform: translateX(-200%);
 }
 
-#item-1:checked ~ .controls label[for="item-1"],
-#item-2:checked ~ .controls label[for="item-2"],
-#item-3:checked ~ .controls label[for="item-3"] {
+#item-1:checked~.controls label[for="item-1"],
+#item-2:checked~.controls label[for="item-2"],
+#item-3:checked~.controls label[for="item-3"] {
   background-color: #333;
 }

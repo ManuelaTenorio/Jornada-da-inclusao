@@ -6,20 +6,20 @@ import PiLogo from '../../assets/images/Pi LOGO.png';
 export default function Header() {
   return (
     <header className="header-bar">
-      <nav className="nav-bar container">
+      <nav className="nav-bar container" role="navigation">
         <img className="logo" src={PiLogo} alt="Logo da página Integra Kids, ilustrando um jogo educativo" />
         <ul className="nav-list">
           <li className="nav-item">
-            <a className="link" href="#inicio-section">Inicio</a>
+            <a className="link" href="#start-section">Inicio</a>
           </li>
           <li className="nav-item">
-            <a className="link" href="#jogos-section">Jogos</a>
+            <a className="link" href="#games-section">Jogos</a>
           </li>
           <li className="nav-item">
-            <a className="link" href="#sobre-section">Sobre</a>
+            <a className="link" href="#about-section">Sobre</a>
           </li>
           <li className="nav-item">
-            <a className="link" href="#contato-section">Contato</a>
+            <a className="link" href="#contact-section">Contato</a>
           </li>
           <li className="nav-item">
             <Link className="link form-button" to="/login">Login</Link>

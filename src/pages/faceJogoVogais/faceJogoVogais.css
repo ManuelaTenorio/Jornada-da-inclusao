@@ -1,0 +1,34 @@
+.bodyGame {
+    font-family: "Comic Neue";
+    color: var(--clr-neutral-500);
+
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-neutral-100);
+}
+
+.result {
+    height: 300px;
+}
+
+.phrase {
+    width: 100%;
+    height: 100px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.dropaArea {
+    height: 50px;
+}
+
+.vogaisHeading {
+    font-size: var(--fs-800);
+    font-weight: var(--fw-bold);
+}
+
+.vogaisParagraph {
+    font-size: var(--fs-700);
+}

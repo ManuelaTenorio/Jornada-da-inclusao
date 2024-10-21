@@ -1,0 +1,49 @@
+.bodyLogin {
+    display: flex;
+
+    background-color: var(--clr-neutral-100);
+    background-size: cover;
+
+    height: 100vh;
+
+    place-content: center;
+}
+
+.login-card>h1 {
+    background-image: url("../../assets/images/LOGO.png");
+    background-size: contain;
+    /* Mantém a proporção da imagem */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    background-position: center;
+    height: 60px;
+    /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25em;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1em;
+    /* Centraliza os elementos do formulário, incluindo o botão */
+}
+
+label {
+    color: var(--clr-neutral-500);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+a {
+    color: var(--clr-info-700);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-info-600);
+    text-decoration: underline;
+}

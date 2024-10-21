@@ -1,66 +1,80 @@
 @import url('color_pallete.css');
 
+/* TODO: Use Grid layout to put cards above background */
 .contact-container {
-    background-color: var(--white);
-    padding: 10px 40px 40px 40px;
-    max-width: 500px;
-    margin: 40px auto;
-    border-radius: 18px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 2em;
+  max-width: 500px;
+  margin: 3em auto;
+  border-radius: 18px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.63);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  
-  .contact-container h2 {
-    font-size: 2rem;
-    font-family: sans-serif;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-form label {
-    font-family: sans-serif;
-    margin-bottom: -10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 1em;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.contact-container h2 {
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-extra-bold);
+  text-align: center;
+}
+
+.generic-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  label {
+    color: var(--clr-neutral-500);
     font-size: 1rem;
-    color: #555;
   }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+
+  >.formfield {
+    color: var(--clr-neutral-700);
+
+    background-color: var(--clr-neutral-100);
+
+    border: 1px solid var(--clr-neutral-200);
     border-radius: 4px;
-    font-size: 1rem;
-    font-family: sans-serif;
+    padding: .625em;
+
+    outline-offset: 2px;
+  }
+
+  >.formfield:not(:placeholder-shown):valid {
+    border: 2px solid var(--clr-success-700);
+  }
+
+  >.formfield:not(:placeholder-shown):invalid {
+    border: 2px solid var(--clr-danger-700);
+  }
+
+  >.formfield.-textarea {
     resize: none;
   }
-  
-  .contact-form button {
-    background-color: #007bff;
-    color: white;
+
+  >.button {
+    color: var(--clr-neutral-500);
+
+    background-color: var(--clr-info-500);
     border: none;
-    padding: 10px;
-    border-radius: 18px;
+
+    padding: .625em;
+    border-radius: .900em;
+    margin: auto;
+    width: min(160px, 95%);
+
     cursor: pointer;
-    font-size: 1rem;
     transition: background-color 0.3s ease;
   }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
+
+  >.button:hover {
+    background-color: var(--clr-info-800);
   }
-  
+}

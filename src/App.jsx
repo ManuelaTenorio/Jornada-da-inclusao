@@ -4,27 +4,34 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home.jsx';
-import Cadastro from './pages/cadastro.jsx';
+import Cadastro from './pages/cadastro/Cadastro.tsx';
 import JogoCores from './pages/jogoCores.jsx';
 import JogoMemoria from './pages/jogoMemoria.jsx';
 import JogoNumeros from './pages/jogoNumeros.jsx';
-import Login from './pages/login.jsx';
 import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
+import Login from './pages/login/Login.tsx';
+import FaceJogoVogais from './pages/faceJogoVogais/FaceJogoVogais.jsx';
+import FaceJogoNumeros from './pages/faceJogoNumeros/FaceJogoNumeros';
+import { AuthProvider } from './contexts/AuthContext.tsx';
 
 const App = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/cadastro" element={<Cadastro />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/jogo-memoria" element={<JogoMemoria />} />
-      <Route path="/jogo-numeros" element={<JogoNumeros />} />
-      <Route path="/jogo-cores" element={<JogoCores />} />
-      <Route path="/resultados" element={<Resultados />} />
-      <Route path="/perfil" element={<Perfil />} />
-    </Routes>
-  </Router>
+  <AuthProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/jogo-memoria" element={<JogoMemoria />} />
+        <Route path="/jogo-numeros" element={<FaceJogoNumeros />} />
+        <Route path="/jogo-vogais" element={<FaceJogoVogais />} />
+        <Route path="/jogo-cores" element={<JogoCores />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/resultados" element={<Resultados />} />
+      </Routes>
+    </Router>
+  </AuthProvider>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

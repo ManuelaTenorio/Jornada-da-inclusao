@@ -1,18 +1,28 @@
-@import url('color_pallete.css');
+/* div.home { */
+/*     background-image: url(../src/assets/images/background-home.jpg); */
+/* } */
 
-div.home{
+.home {
+    margin: 0;
     background-image: url(../src/assets/images/background-home.jpg);
 }
 
-.home h1{
-    text-align: center;
-    font-family: sans-serif;
-    background-color: var(--white);
-    padding: 20px;
-    height: 100%;
-    margin: 0 auto;
+.heading-section {
+    >.heading {
+        background-color: var(--clr-neutral-100);
+
+        padding: 1em;
+
+        color: var(--clr-neutral-500);
+        font-size: clamp(var(--fs-600), 5vw, var(--fs-900));
+        font-weight: var(--fw-black);
+        text-align: center;
+    }
 }
 
-body{
-    margin: 0;
+#start-section,
+#games-section,
+#about-section,
+#contact-section {
+    scroll-margin-top: 5rem;
 }

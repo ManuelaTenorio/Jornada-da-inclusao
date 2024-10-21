@@ -1,6 +1,8 @@
 @import url("./assets/styles/fonts.css");
 @import url("./assets/styles/reset.css");
 
+/* TODO: Set brighter colors for the design system */
+
 /* GENERAL STYLING */
 :root {
   /* Typography */
@@ -10,7 +12,7 @@
   --ff-heading: var(--ff-primary);
   --ff-body: var(--ff-primary);
 
-  --fs-400: 0.75rem;
+  --fs-400: 0.875rem;
   --fs-500: 1rem;
   --fs-600: 1.5rem;
   --fs-700: 2rem;
@@ -32,7 +34,7 @@
   --clr-primary-500: #93D6A2;
   --clr-primary-600: #3C5742;
   --clr-primary-700: #5F8A68;
-  --clr-primary-900: #82BD8F;
+  --clr-primary-800: #82BD8F;
 
   --clr-secondary-500: #D4B4E6;
   --clr-secondary-600: #5E5066;
@@ -40,10 +42,10 @@
   --clr-secondary-800: #BC9FCC;
 
   /* neutral light */
-  --clr-neutral-100: #F0F0F0;
-  --clr-neutral-200: #C0C0C0;
-  --clr-neutral-300: #D0D0D0;
-  --clr-neutral-400: #E0E0E0;
+  --clr-neutral-100: #FDFDFD;
+  --clr-neutral-200: #DADADA;
+  --clr-neutral-300: #EAEAEA;
+  --clr-neutral-400: #FAFAFA;
 
   /* neutral dark */
   --clr-neutral-500: #222222;
@@ -80,6 +82,18 @@ body {
   font-weight: var(--fw-regular);
 
   background-color: var(--clr-neutral-100);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
 }
 
 /* HELPERS */
@@ -87,13 +101,6 @@ body {
   width: min(900px, 95%);
 
   margin: auto;
-}
-
-#inicio-section,
-#jogos-section,
-#sobre-section,
-#contato-section {
-  scroll-margin-top: 5rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

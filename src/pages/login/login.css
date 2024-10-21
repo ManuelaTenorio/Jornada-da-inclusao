@@ -1,0 +1,113 @@
+.bodyLogin {
+    display: flex;
+
+    background-color: var(--clr-neutral-100);
+    background-size: cover;
+
+    height: 100vh;
+
+    place-content: center;
+}
+
+/* Tela de Login */
+.login-card {
+    background-color: var(--clr-neutral-100);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.60);
+
+    border-radius: 10px;
+    margin: auto;
+    padding: 2.5em;
+    width: min(500px, 95%);
+    /* text-align: center; */
+}
+
+.login-card>h1 {
+    background-image: url("../../assets/images/LOGO.png");
+    background-size: contain;
+    /* Mantém a proporção da imagem */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    background-position: center;
+    height: 60px;
+    /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25em;
+}
+
+label {
+    color: var(--clr-neutral-500);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.formfield {
+    color: var(--clr-neutral-700);
+
+    background-color: var(--clr-neutral-100);
+
+    border: 1px solid var(--clr-neutral-200);
+    border-radius: 4px;
+    padding: .625em;
+
+    outline-offset: 2px;
+}
+
+.formfield:not(:placeholder-shown):valid {
+    border: 2px solid var(--clr-success-700);
+}
+
+.formfield:not(:placeholder-shown):invalid {
+    border: 2px solid var(--clr-danger-700);
+}
+
+.formfield.-textarea {
+    resize: none;
+}
+
+.btn-login {
+    color: var(--clr-neutral-500);
+
+    background-color: var(--clr-info-500);
+    border: none;
+    padding: .625em;
+    border-radius: .900em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    margin: auto;
+    margin-top: 1em;
+    width: min(160px, 95%);
+}
+
+.btn-login:hover {
+    background-color: var(--clr-info-800);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1em;
+    /* Centraliza os elementos do formulário, incluindo o botão */
+}
+
+.login-paragraph {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.login-paragraph:last-child {
+    margin-top: 0;
+}
+
+a {
+    color: var(--clr-info-700);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-info-600);
+    text-decoration: underline;
+}
