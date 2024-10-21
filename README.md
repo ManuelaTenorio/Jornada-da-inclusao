@@ -1,5 +1,6 @@
 # PI - Jornada da Inclusão 
 Para a versão em inglês, veja [README.en.md](README.en.md).
+
 ## Índice
 - [Sobre](#sobre)
 - [ODS](#ods)
@@ -13,8 +14,19 @@ Para a versão em inglês, veja [README.en.md](README.en.md).
 - [Paleta de cores](#paleta-de-cores)
 - [Dependências Node](#dependências-node)
 - [Screenshots](#screenshots)
+  - [Página inicial](#página-inicial)
+  - [Login](#login)
+  - [Cadastro](#cadastro)
+  - [Jogo dos Números](#jogo-dos-números)
+  - [Jogo das Cores](#jogo-das-cores)
+  - [Jogo das Vogais](#jogo-das-vogais)
+  - [Jogo da Memória](#jogo-da-memória)
+  - [Página de perfil](#página-de-perfil)
+- [Versionamento](#versionamento)
+- [Hospedagem](#hospedagem)
 - [Bugs encontrados](#bugs-encontrados)
 - [Considerações finais](#considerações-finais)
+
 
 
 ## Sobre
@@ -98,7 +110,7 @@ Obs: algumas telas podem está desatualizadas ou faltando, e serão corrigidas p
 ### Jogo das Vogais
 ![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/vogais.png)
 ### Jogo da Memória
-[ a obter ]
+![App Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/memoria.jpeg)
 ### Página de perfil
 [ a obter ]
 

@@ -10,12 +10,23 @@ For the Portuguese version, see [README.md](README.md).
   - [Back-End](#back-end)
   - [IDEs](#ides)
   - [Frameworks](#frameworks)
-  - [Hosting](#hosting)
+  - [Host](#host)
 - [Color Palette](#color-palette)
 - [Node Dependencies](#node-dependencies)
 - [Screenshots](#screenshots)
+  - [Home Page](#home-page)
+  - [Login](#login)
+  - [Registration](#registration)
+  - [Number Game](#number-game)
+  - [Color Game](#color-game)
+  - [Vowel Game](#vowel-game)
+  - [Memory Game](#memory-game)
+  - [Profile Page](#profile-page)
+- [Versioning](#versioning)
+- [Hosting](#hosting)
 - [Bugs Found](#bugs-found)
 - [Final Considerations](#final-considerations)
+
 
 ## About
 The Journey of Inclusion project will be developed to identify and meet the specific needs of each child who has difficulties with inclusion in school environments. It will utilize a combination of interactive and personalized assessments, as well as teaching methods with resources and activities that primarily assist in literacy processes and number identification. The main objective is to improve the individual performance of children, thereby promoting quality education and reducing educational inequality, aiming to achieve the Sustainable Development Goals (SDGs) 4 and 10.
@@ -50,7 +61,7 @@ This project aims to contribute directly to the following SDGs:
 [![My Skills](https://skillicons.dev/icons?i=vscode,mongodb&perline=3)](https://skillicons.dev) 
 ### Frameworks
 [![My Skills](https://skillicons.dev/icons?i=spring&perline=3)](https://skillicons.dev)
-### Hosting
+### Host
 [![My Skills](https://skillicons.dev/icons?i=firebase&perline=3)](https://skillicons.dev)
 
 ## Color Palette
