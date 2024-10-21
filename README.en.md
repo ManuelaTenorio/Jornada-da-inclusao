@@ -112,7 +112,7 @@ Note: some screens may be outdated or missing and will be corrected later.
 ![Vowel Game Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/vogais.png)
 
 ### Memory Game
-[Image to be added]
+![Vowel Game Screenshot](https://github.com/ManuelaTenorio/Jornada-da-inclusao/blob/main/screenshots/memoria.jpeg)
 
 ### Profile Page
 [Image to be added]
