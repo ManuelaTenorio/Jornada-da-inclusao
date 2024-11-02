@@ -141,3 +141,18 @@ body {
 #popup-close:hover {
     background-color: #c2bcbc;
 }
+
+@media (max-width: 480px) {
+    .game-container {
+        width: 90%;
+        height: min-content;
+        margin-left: 30px;
+    }
+
+    .board{
+        padding: 0;
+        width: 90%;
+    }
+
+
+}
