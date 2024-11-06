@@ -46,7 +46,7 @@ const JogoMemoria = () => {
         if (cardsWon.length > 0 && cardsWon.length === cards.length) {
             setPopupMessage('Missão concluída!');
             setShowPopup(true);
-            setTimeout(() => navigate('/proxima-pagina'), 2000); // Altere o caminho conforme necessário
+            setTimeout(() => navigate('/'), 2000); // Altere o caminho conforme necessário
         }
     }, [cardsWon, cards.length, navigate]);
 

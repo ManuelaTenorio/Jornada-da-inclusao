@@ -146,12 +146,16 @@ body {
     .game-container {
         width: 90%;
         height: min-content;
-        margin-left: 30px;
+        justify-content: center;
     }
 
     .board{
         padding: 0;
         width: 90%;
+    }
+
+    body{
+        height: 100vh;
     }
 
 
