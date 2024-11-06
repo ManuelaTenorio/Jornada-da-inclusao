@@ -12,6 +12,7 @@ import {
     closestCorners,
 } from "@dnd-kit/core";
 import GameNumbers from '../gameNumbers/GameNumbers.jsx';
+import { Link } from 'react-router-dom';
 
 export default function FaceJogoNumeros() {
     const [numbers, setNumbers] = useState(
@@ -33,7 +34,6 @@ export default function FaceJogoNumeros() {
         return (
             <div ref={setNodeRef} className="resultNumber">
                 <div className='dropaArea'>
-                    {/* TODO: rewrite this part */}
                     {droppedNumbers.map(number => (
                         <div key={number.id} id={number.id} className="numberInDroppable">
                             {number.value} {/* Converte o valor numérico para a letra correspondente. */}
@@ -52,24 +52,6 @@ export default function FaceJogoNumeros() {
 
         // TODO: Write the logic to filter numbers here
 
-        // Verifica se o item foi solto na área de soltura ('droppable-area').
-
-        // if (over.id === 'droppable-area') {
-        //     const numberToDrop = parseInt(active.id); // Converte o `id` para número
-        //
-        //     // Verifica se o número ainda não foi solto anteriormente e é par.
-        //     if (numberToDrop !== undefined &&
-        //         !droppedNumbers.includes(numberToDrop) &&
-        //         numberToDrop % 2 === 0) {
-        //         setDroppedNumbers((prev) => [...prev, numberToDrop]); // Adiciona o número à lista de números soltos.
-        //
-        //         // Filtra o número que foi solto da lista original de números.
-        //         setNumbers((prevNumbers) =>
-        //             prevNumbers.filter((number) => number !== numberToDrop)
-        //         );
-        //     }
-        // }
-
         if (over.id === 'droppable-area') {
             const numberToDrop = numbers.find(number => number.id === active.id);
 
@@ -85,18 +67,13 @@ export default function FaceJogoNumeros() {
                 setDroppedNumbers(prev => [...prev, numberToDrop]);
                 setNumbers(prevNumbers => prevNumbers.filter(number => number.id !== numberToDrop.id));
             }
-
-            // // Verifica se o número ainda não foi solto anteriormente e é par.
-            // if (numberToDrop !== undefined &&
-            //     !droppedNumbers.includes(numberToDrop) &&
-            //     numberToDrop % 2 === 0) {
-            //     setDroppedNumbers((prev) => [...prev, numberToDrop]); // Adiciona o número à lista de números soltos.
-
-            // Filtra o número que foi solto da lista original de números.
-            // setNumbers((prevNumbers) =>
-            //     prevNumbers.filter((number) => number !== numberToDrop)
-            // );
         }
+    }
+
+    let isFinished = false;
+
+    if (droppedNumbers.length === numbers.length) {
+        isFinished = true;
     }
 
     return (

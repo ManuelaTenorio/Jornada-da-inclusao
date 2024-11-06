@@ -24,6 +24,10 @@
         background-color: var(--clr-neutral-400);
         border-radius: 7px;
     }
+
+    &:focus-within {
+        cursor: move;
+    }
 }
 
 .letter:hover,
