@@ -7,7 +7,6 @@ import Home from './pages/home.jsx';
 import Cadastro from './pages/cadastro/Cadastro.tsx';
 import JogoCores from './pages/jogoCores.jsx';
 import JogoMemoria from './pages/jogoMemoria.jsx';
-import JogoNumeros from './pages/jogoNumeros.jsx';
 import Resultados from './pages/resultados.jsx';
 import Perfil from './pages/perfil.jsx';
 import Login from './pages/login/Login.tsx';

@@ -15,7 +15,7 @@ const Home = () => (
     <main>
       <Carousel />
       <div className="heading-section">
-        <h1 className="heading">Confira os games da nossa plataforma</h1>
+        <h1 className="heading">Confira os jogos da nossa plataforma</h1>
       </div>
       <Cards />
       <About />

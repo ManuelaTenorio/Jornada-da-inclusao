@@ -55,11 +55,13 @@ label {
 }
 
 .formfield:not(:placeholder-shown):valid {
-    border: 2px solid var(--clr-success-700);
+    border: 2px solid var(--clr-success-800);
+    transition: border 1s step-end;
 }
 
 .formfield:not(:placeholder-shown):invalid {
-    border: 2px solid var(--clr-danger-700);
+    border: 2px solid var(--clr-danger-800);
+    transition: border 1s step-end;
 }
 
 .formfield.-textarea {
