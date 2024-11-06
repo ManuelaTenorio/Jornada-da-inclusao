@@ -8,22 +8,24 @@
 }
 
 body {
-    padding-top: 10vh;
     background-color: #f0f0f0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Container do perfil */
-#profile-container {
-    width: 100%;
-    max-width: 1000px; /* Aumentar o tamanho máximo do container */
-    background-color: #e2e4ebfd; /* Cor de fundo do container */
-    padding: 40px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas mais retangulares */
+.profile-container {
+    margin-inline: auto;
+    width: min(900px, 95%);
+    padding: 2em; /* Espaçamento interno */
+    border-radius: 1em; /* Bordas mais retangulares */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.60); /* Sombra sutil */
+}
+
+.profile-info {
+    display: flex;
+    gap: 2em;
 }
 
 /* Título do perfil */
@@ -40,9 +42,6 @@ h1 {
 
 /* Foto do perfil */
 .profile-picture {
-    display: flex;
-    justify-content: center; /* Centraliza a imagem */
-    margin-bottom: 50px; /* Margem inferior */
 }
 
 .profile-picture img {
@@ -54,6 +53,7 @@ h1 {
 
 /* Informações do usuário */
 .user-info {
+    flex-grow: 1;
     margin-bottom: 20px; /* Margem inferior */
 }
 
@@ -75,6 +75,7 @@ input[type="button"] {
     border-radius: 20px;
     height: 40px; /* Aumenta a altura do botão */
     width: 100%; /* O botão ocupa toda a largura do container */
+    max-width: 200px;
     cursor: pointer;
     font-size: 1rem; /* Ajusta o tamanho da fonte */
     padding: 10px; /* Mantém o padding */
