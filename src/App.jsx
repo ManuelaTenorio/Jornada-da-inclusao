@@ -9,7 +9,7 @@ import JogoCores from './pages/jogoCores.jsx';
 import JogoMemoria from './pages/jogoMemoria.jsx';
 import JogoNumeros from './pages/jogoNumeros.jsx';
 import Resultados from './pages/resultados.jsx';
-import Perfil from './pages/perfil.jsx';
+import Perfil from './pages/perfil/perfil.jsx';
 import Login from './pages/login/Login.tsx';
 import FaceJogoVogais from './pages/FaceJogoVogais/FaceJogoVogais.jsx';
 import { AuthProvider } from './contexts/AuthContext.tsx';
