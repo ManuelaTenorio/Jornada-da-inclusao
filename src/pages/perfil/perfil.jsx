@@ -1,7 +1,7 @@
 import React from 'react'
 import "./perfil.css"
 
-function perfil() {
+function Perfil() {
   return (
     <div className='bodyPer'>
       <div className="profile-container">
@@ -27,4 +27,4 @@ function perfil() {
   )
 }
 
-export default perfil
+export default Perfil
