@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import '../../assets/styles/header-footer.css';
 import PiLogo from '../../assets/images/Pi LOGO.png';
 
-function Header() {
+function Header({ isLoggedIn }) { // Recebe isLoggedIn como prop
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const headerOffset = 150; // Ajuste esse valor conforme a altura do seu cabeçalho
+      const headerOffset = 150; // Ajuste conforme a altura do cabeçalho
       const elementPosition = section.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
@@ -18,7 +18,6 @@ function Header() {
     }
   };
 
-
   return (
     <div className="head">
       <li>
@@ -28,11 +27,13 @@ function Header() {
       <li onClick={() => scrollToSection('lista-jogos')} className="link-styles">Jogos</li>
       <li onClick={() => scrollToSection('sobre-nos')} className="link-styles">Sobre</li>
       <li onClick={() => scrollToSection('contato')} className="link-styles">Contato</li>
-      <li><Link className={"link-styles"} to="/login">Login</Link></li>
+      <li>
+        <Link className="link-styles" to={isLoggedIn ? "/perfil" : "/login"}>
+          {isLoggedIn ? "Perfil" : "Login"}
+        </Link>
+      </li>
     </div>
   );
 }
 
 export default Header;
-
-
