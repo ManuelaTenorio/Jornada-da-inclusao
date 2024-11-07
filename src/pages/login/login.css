@@ -1,115 +1,114 @@
 .bodyLogin {
-    display: flex;
+  display: flex;
 
-    background-color: var(--clr-neutral-100);
-    background-size: cover;
+  background-color: var(--clr-neutral-100);
+  background-size: cover;
 
-    height: 100vh;
+  height: 100vh;
 
-    place-content: center;
+  place-content: center;
 }
 
 /* Tela de Login */
 .login-card {
-    background-color: var(--clr-neutral-100);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.60);
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 
-    border-radius: 10px;
-    margin: auto;
-    padding: 2.5em;
-    width: min(500px, 95%);
-    /* text-align: center; */
+  border-radius: 10px;
+  margin: auto;
+  padding: 2.5em;
+  width: min(500px, 95%);
 }
 
-.login-card>h1 {
-    background-image: url("../../assets/images/LOGO.png");
-    background-size: contain;
-    /* Mantém a proporção da imagem */
-    background-repeat: no-repeat;
-    /* Evita que a imagem se repita */
-    background-position: center;
-    height: 60px;
-    /* Ajuste conforme necessário */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.25em;
+.login-card > h1 {
+  background-image: url("../../assets/images/LOGO.png");
+  background-size: contain;
+  /* Mantém a proporção da imagem */
+  background-repeat: no-repeat;
+  /* Evita que a imagem se repita */
+  background-position: center;
+  height: 60px;
+  /* Ajuste conforme necessário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25em;
 }
 
 label {
-    color: var(--clr-neutral-500);
-    font-size: 1rem;
-    font-weight: var(--fw-medium);
+  color: var(--clr-neutral-500);
+  font-size: 1rem;
+  font-weight: var(--fw-medium);
 }
 
 .formfield {
-    color: var(--clr-neutral-700);
+  color: var(--clr-neutral-700);
 
-    background-color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-100);
 
-    border: 1px solid var(--clr-neutral-200);
-    border-radius: 4px;
-    padding: .625em;
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 4px;
+  padding: 0.625em;
 
-    outline-offset: 2px;
+  outline-offset: 2px;
 }
 
 .formfield:not(:placeholder-shown):valid {
-    border: 2px solid var(--clr-success-800);
-    transition: border 1s step-end;
+  border: 2px solid var(--clr-success-800);
+  transition: border 1s step-end;
 }
 
 .formfield:not(:placeholder-shown):invalid {
-    border: 2px solid var(--clr-danger-800);
-    transition: border 1s step-end;
+  border: 2px solid var(--clr-danger-800);
+  transition: border 1s step-end;
 }
 
 .formfield.-textarea {
-    resize: none;
+  resize: none;
 }
 
 .btn-login {
-    color: var(--clr-neutral-500);
+  color: var(--clr-neutral-500);
 
-    background-color: var(--clr-info-500);
-    border: none;
-    padding: .625em;
-    border-radius: .900em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: var(--clr-info-500);
+  border: none;
+  padding: 0.625em;
+  border-radius: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
-    margin: auto;
-    margin-top: 1em;
-    width: min(160px, 95%);
+  margin: auto;
+  margin-top: 1em;
+  width: min(160px, 95%);
 }
 
 .btn-login:hover {
-    background-color: var(--clr-info-800);
+  background-color: var(--clr-info-800);
 }
 
 .login-form {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    gap: 1em;
-    /* Centraliza os elementos do formulário, incluindo o botão */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 1em;
+  /* Centraliza os elementos do formulário, incluindo o botão */
 }
 
 .login-paragraph {
-    text-align: center;
-    margin-top: 1em;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .login-paragraph:last-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 a {
-    color: var(--clr-info-700);
-    text-decoration: none;
+  color: var(--clr-info-700);
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--clr-info-600);
-    text-decoration: underline;
+  color: var(--clr-info-600);
+  text-decoration: underline;
 }

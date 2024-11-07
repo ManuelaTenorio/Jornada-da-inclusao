@@ -12,6 +12,7 @@ import Perfil from './pages/perfil.jsx';
 import Login from './pages/login/Login.tsx';
 import FaceJogoVogais from './pages/faceJogoVogais/FaceJogoVogais.jsx';
 import FaceJogoNumeros from './pages/faceJogoNumeros/FaceJogoNumeros';
+import { ExplicacaoCores, ExplicacaoMemoria, ExplicacaoNumeros, ExplicacaoVogais } from './pages/explicacaoNumeros.jsx';
 import { AuthProvider } from './contexts/AuthContext.tsx';
 
 const App = () => (
@@ -21,6 +22,10 @@ const App = () => (
         <Route path="/" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/jogo-cores-exp" element={<ExplicacaoCores />} />
+        <Route path="/jogo-memoria-exp" element={<ExplicacaoMemoria />} />
+        <Route path="/jogo-numeros-exp" element={<ExplicacaoNumeros />} />
+        <Route path="/jogo-vogais-exp" element={<ExplicacaoVogais />} />
         <Route path="/jogo-memoria" element={<JogoMemoria />} />
         <Route path="/jogo-numeros" element={<FaceJogoNumeros />} />
         <Route path="/jogo-vogais" element={<FaceJogoVogais />} />

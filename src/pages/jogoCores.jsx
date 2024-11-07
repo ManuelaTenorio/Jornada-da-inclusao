@@ -141,29 +141,31 @@ export default function JogoNumeros() {
     }
 
     return (
-        <div className={classes.gameBody}>
-            <div className={classes.game}>
-                <DndContext
-                    sensors={sensors}
-                    collisionDetection={closestCorners}
-                    onDragEnd={handleDragEnd}
-                >
-                    <div className={classes.infoArea}>
-                        <h1 className={classes.heading}>Jogo das Cores</h1>
-                        <p className={classes.paragraph}>Arraste as cores para seus respectivos animais.</p>
-                        <div className={classes.info}>
-                            <Descriptions />
-                            <p className={classes.paragraph}>Coloque a cor favorita em cada bichinho.</p>
+        <>
+            <div className={classes.gameBody}>
+                <div className={classes.game}>
+                    <DndContext
+                        sensors={sensors}
+                        collisionDetection={closestCorners}
+                        onDragEnd={handleDragEnd}
+                    >
+                        <div className={classes.infoArea}>
+                            <h1 className={classes.heading}>Jogo das Cores</h1>
+                            <p className={classes.paragraph}>Arraste as cores para seus respectivos animais.</p>
+                            <div className={classes.info}>
+                                <Descriptions />
+                                <p className={classes.paragraph}>Coloque a cor favorita em cada bichinho.</p>
+                            </div>
+                            <div className={classes.colorArea}>
+                                <Colors />
+                            </div>
                         </div>
-                        <div className={classes.colorArea}>
-                            <Colors />
+                        <div className={classes.cardGrid}>
+                            <Cards />
                         </div>
-                    </div>
-                    <div className={classes.cardGrid}>
-                        <Cards />
-                    </div>
-                </DndContext>
+                    </DndContext>
+                </div>
             </div>
-        </div>
+        </>
     );
 }

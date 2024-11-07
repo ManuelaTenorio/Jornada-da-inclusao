@@ -9,6 +9,7 @@ body {
 }
 
 .gameBody {
+  padding-block: 2em;
   font-family: "Comic Neue";
   color: var(--clr-neutral-500);
 
@@ -28,6 +29,7 @@ body {
 .heading {
   font-size: 2.5rem;
   margin-bottom: 1em;
+  font-weight: var(--fw-bold);
 }
 
 .paragraph {
