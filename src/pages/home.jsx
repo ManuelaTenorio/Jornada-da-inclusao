@@ -19,7 +19,7 @@ const Home = () => {
       backgroundImage: `url(${backgroundImage})`,
       backgroundAttachment: 'fixed', 
     }}>
-      <Header isLoggedIn={isLoggedIn} />
+      <Header isLoggedIn={true} />
       <Carousel />
       <h1>Confira os jogos da nossa plataforma</h1>
       <Cards />

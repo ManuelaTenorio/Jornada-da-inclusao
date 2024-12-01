@@ -1,7 +1,10 @@
 import React from 'react'
-import "./perfil.css"
+import "../assets/styles/perfil.css"
 
 function Perfil() {
+  function result() {
+    
+  }
   return (
     <div className='bodyPer'>
       <div className="profile-container">
@@ -19,7 +22,8 @@ function Perfil() {
 
             <label for="phone">Telefone:</label>
             <p className='pPer' id="phone">(11) 91234-5678</p>
-            <input type="button" value="Editar Perfil" onclick="editProfile()"/>
+            <a href="/resultados"><button className='btnResult' type="button" value="Resultados" onclick="result()">Resultados</button></a>
+            <a href="/"><button className='btnResult' type="button" value="Home">Home</button></a>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import letter from '../../assets/images/letters.jpg';
 import color from '../../assets/images/colors.jpg';
-import memory from '../../assets/images/memory.png';
+import memory from '../../assets/images/memory.jpg';
 import number from '../../assets/images/numbers.png';
 
 const Cards = () => {

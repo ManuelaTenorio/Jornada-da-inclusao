@@ -54,25 +54,24 @@ const JogoMemoria = () => {
 
     const checkForMatch = () => {
         const [optionOneId, optionTwoId] = cardsChosenId;
-
+    
         if (optionOneId >= 0 && optionTwoId >= 0 && optionOneId < cards.length && optionTwoId < cards.length) {
             const optionOneName = cards[optionOneId]?.name;
             const optionTwoName = cards[optionTwoId]?.name;
-
+    
             if (optionOneId === optionTwoId) {
                 setPopupMessage('Você clicou na mesma imagem');
+                setShowPopup(true); // Exibe o popup apenas para a mesma imagem
             } else if (optionOneName === optionTwoName) {
-                setPopupMessage('Você encontrou uma combinação');
                 setCardsWon(prev => [...prev, optionOneId, optionTwoId]);
-            } else {
-                setPopupMessage('Tente novamente');
+                // Não exibe popup para combinações corretas
             }
-            setShowPopup(true);
             clearChosenCards();
         } else {
             console.error('IDs escolhidos estão fora do intervalo válido:', optionOneId, optionTwoId);
         }
     };
+    
 
     const clearChosenCards = () => {
         setCardsChosen([]);

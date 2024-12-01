@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
-import './login.css';
+import '../assets/styles/login.css';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthContext';
+import { AuthContext } from '../contexts/AuthContext';
 import { useContext, useEffect, useState } from 'react';
 function Login() {
     // Hook para navegar entre as páginas, usado para redirecionar o usuário após o login.

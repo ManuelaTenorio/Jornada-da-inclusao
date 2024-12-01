@@ -1,1 +1,1 @@
-{"root":["./src/contexts/authcontext.tsx","./src/contexts/usercontext.tsx","./src/models/usuario.ts","./src/models/usuariologin.ts","./src/pages/jogonumeros.tsx","./src/pages/cadastro/cadastro.tsx","./src/pages/login/login.tsx","./src/services/service.tsx"],"version":"5.6.3"}
+{"root":["./src/contexts/authcontext.tsx","./src/contexts/usercontext.tsx","./src/models/usuario.ts","./src/models/usuariologin.ts","./src/pages/cadastro.tsx","./src/pages/login.tsx","./src/pages/jogonumeros.tsx","./src/services/service.tsx"],"version":"5.6.3"}

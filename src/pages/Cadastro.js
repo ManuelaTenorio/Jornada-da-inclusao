@@ -1,8 +1,8 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { cadastrarUsuario } from '../../services/Service';
-import './Cadastro.css';
+import { cadastrarUsuario } from '../services/Service';
+import '../assets/styles/Cadastro.css';
 function Cadastro() {
     // Hook para navegar entre as páginas, usado para redirecionar o usuário.
     const navigate = useNavigate();

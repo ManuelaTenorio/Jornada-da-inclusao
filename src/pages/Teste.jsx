@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import './teste.css'
+import '../assets/styles/teste.css'
 
 function Teste() {
     const [position, setPosition] = useState({ top: 100, left: 100 }); // Initial position

@@ -83,7 +83,7 @@
 }
 
 /* Botão de editar */
-input[type="button"] {
+.btnR {
     background-color: #e60000;
     color: #fff;
     border: none;
@@ -104,7 +104,7 @@ input[type="button"] {
     /* Margens superior e inferior */
 }
 
-input[type="button"]:hover {
+.btnR:hover {
     background-color: #770c0c;
     /* Cor ao passar o mouse */
 }

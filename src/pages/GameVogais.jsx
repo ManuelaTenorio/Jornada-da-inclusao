@@ -1,8 +1,8 @@
 import React from 'react';
-import Letters from '../../components/letters/Letters';
+import Letters from '../components/letters/Letters';
 import { SortableContext, rectSortingStrategy } from '@dnd-kit/sortable';
 
-import './gameVogais.css';
+import '../assets/styles/gameVogais.css';
 
 function GameVogais({ letters }) {
     // Função para converter um número em uma letra do alfabeto (0 = A, 1 = B, etc.).

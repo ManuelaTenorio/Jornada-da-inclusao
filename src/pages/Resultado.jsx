@@ -1,5 +1,5 @@
 import React from 'react'
-import "./resultado.css"
+import "../assets/styles/resultado.css"
 
 function Resultado() {
   return (
@@ -43,6 +43,9 @@ function Resultado() {
         </tbody>
       </table>
           </div>
+        </div>
+        <div className='user-info'>
+        <a href="/"><button className='btnR' type="button" onclick="result()">Home</button></a>
         </div>
       </div>
     </div>

@@ -68,7 +68,7 @@
 }
 
 /* Botão de editar */
-input[type="button"] {
+.btnResult {
     background-color: #e60000;
     color: #fff;
     border: none;
@@ -83,7 +83,7 @@ input[type="button"] {
     margin: 20px 0; /* Margens superior e inferior */
 }
 
-input[type="button"]:hover {
+.btnResult:hover {
     background-color: #770c0c; /* Cor ao passar o mouse */
 }
 

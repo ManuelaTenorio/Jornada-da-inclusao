@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './faceJogoVogais.css';
+import '../assets/styles/faceJogoVogais.css';
 import {
     DndContext,
     useDroppable,
@@ -8,7 +8,7 @@ import {
     PointerSensor,
     closestCorners,
 } from "@dnd-kit/core";
-import GameVogais from '../gameVogais/GameVogais';
+import GameVogais from '../pages/GameVogais';
 
 function FaceJogoVogais() {
     // Estado para armazenar as letras disponíveis para serem arrastadas.
