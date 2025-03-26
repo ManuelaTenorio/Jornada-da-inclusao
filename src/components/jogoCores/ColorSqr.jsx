@@ -1,12 +1,12 @@
 import React from "react";
 import { random } from "../../hooks/utils.js"
 import { colors } from "./Data.jsx"
-import classes from '../../assets/styles/jogoCores.module.css'
+import styles from '../../assets/styles/jogoCores.module.css'
 
 function ColorSqr({ color }) {
   return (
     <div
-      className={classes.square}
+      className={styles.square}
       style={color.theme}
     >
     </div>

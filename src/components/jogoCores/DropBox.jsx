@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from '../../assets/styles/jogoNumeros.module.css'
+import styles from '../../assets/styles/jogoNumeros.module.css'
 
 export function DropBox() {
   return (
-    <div className={classes.dropBox}></div>
+    <div className={styles.dropBox}></div>
   )
 }

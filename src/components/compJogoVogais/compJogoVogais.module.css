@@ -1,0 +1,46 @@
+/* Estilos gerais para .compJogo */
+.compJogo {
+    display: grid;  /* Usando o layout de grid para organizar os elementos */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 3fr));  
+    /* As colunas são ajustadas automaticamente com um tamanho mínimo de 80px, 
+       e o tamanho máximo será 3 vezes a fração disponível */
+    gap: 20px;  /* Espaçamento de 20px entre as colunas e linhas do grid */
+    margin: 10px;  /* Margem de 10px ao redor do grid */
+    width: 100%;  /* O grid ocupa 100% da largura do contêiner pai */
+}
+
+/* Media Query para telas menores que 1400px */
+@media (max-width: 1400px) {
+    .compJogo {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 3fr));  
+        /* Em telas médias (menos que 1400px), as colunas têm pelo menos 70px de largura */
+        gap: 15px;  /* Diminui o espaçamento para 15px em telas menores */
+    }
+}
+
+/* Media Query para telas menores que 1000px */
+@media (max-width: 1000px) {
+    .compJogo {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 3fr));  
+        /* Em telas ainda menores (menos que 1000px), as colunas têm pelo menos 70px de largura */
+        gap: 10px;  /* Diminui o espaçamento para 10px em telas pequenas */
+    }
+}
+
+/* Media Query para telas menores que 700px */
+@media (max-width: 700px) {
+    .compJogo {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 3fr));  
+        /* Em telas muito pequenas (menos que 700px), as colunas terão 80px como mínimo */
+        gap: 8px;  /* O espaçamento entre as colunas é reduzido para 8px */
+    }
+}
+
+/* Media Query para telas menores que 400px */
+@media (max-width: 400px) {
+    .compJogo {
+        grid-template-columns: auto auto auto auto;  
+        /* Para telas extremamente pequenas (menos que 400px), o grid terá 4 colunas fixas */
+        gap: 5px;  /* O espaçamento entre as colunas é reduzido para 5px */
+    }
+}

@@ -1,0 +1,51 @@
+.numbers {
+  font-weight: var(--fw-bold);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2em;
+  margin: auto;
+  margin-top: 4em;
+  width: 95%;
+}
+
+.number {
+  z-index: 2;
+  margin: auto;
+  background-color: var(--clr-neutral-200);
+  color: rgb(62, 85, 39);
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  text-align: center;
+  align-content: center;
+  box-sizing: border-box;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--clr-neutral-400);
+    border-radius: 7px;
+  }
+}
+
+.number:hover,
+.number:active,
+.number:focus {
+  /* Ensure no size-related properties are being changed here */
+  transform: none;
+  /* Or remove scaling transform if it's being applied */
+}
+
+.numberInDroppable {
+  width: "50px";
+  height: "50px";
+  display: "flex";
+  color: "white";
+}
+
+#num1,
+#num5,
+#num9,
+#num15,
+#num21 {
+  background-color: #66cc92;
+}

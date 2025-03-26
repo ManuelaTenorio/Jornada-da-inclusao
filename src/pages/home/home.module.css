@@ -1,0 +1,25 @@
+@import url('../../assets/styles/color_pallete.css');
+
+div.home {
+  background-image: url(../src/assets/images/background-home.jpg);
+  background-size: 50%;
+  background-position: top;
+  background-repeat: repeat;
+  width: 100%;
+}
+
+.home h1 {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: var(--white);
+  padding: 20px;
+  height: 100%;
+  margin: 0 auto;
+  color: var(--clr-neutral-500);
+  font-size: 3rem;
+}
+
+body {
+  margin: 0;
+}
+

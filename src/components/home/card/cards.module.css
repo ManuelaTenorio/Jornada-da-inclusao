@@ -1,0 +1,80 @@
+/* TODO: Align card text using subgrid */
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+
+  padding: 3rem;
+}
+
+.cardComponent {
+  background-color: #f8f9fa;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.63);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  >.image {
+    border-radius: 1em 1em 0 0;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  >.card-text {
+    color: var(--clr-neutral-500);
+    font-size: var(--fs-600);
+    font-weight: var(--fw-semi-bold);
+    text-decoration: none;
+  }
+
+  >.card-text>.title {
+    margin-bottom: 1em;
+
+    text-decoration: none;
+  }
+
+  >.card-text>.description {
+    color: var(--clr-neutral-600);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-light);
+
+    padding: 1em;
+  }
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+}

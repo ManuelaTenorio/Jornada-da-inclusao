@@ -1,0 +1,236 @@
+/* Estilo padrão para a página de Vogais */
+.pagVogais {
+    display: grid;  /* Usando o layout de grid para organizar os elementos */
+    grid-template-columns: auto auto auto;  /* Exibe três colunas em uma linha */
+    height: 100%;  /* A altura da página será de 100% da altura da tela */
+    max-height: 100%;
+}
+
+/* Estilo para a área de resultado da letra */
+.resultletra {
+    background-color: #C0C0C0;  /* Cor de fundo cinza */
+    margin: 20px;  /* Espaçamento externo */
+    max-height: 40%;  /* Altura máxima é 40% da altura do contêiner pai */
+    height: 30%;  /* Altura fixa de 30% do contêiner pai */
+    min-height: 20%;  /* Altura mínima é 20% */
+    max-width: 70%;  /* Largura máxima de 70% do contêiner pai */
+    border-radius: 7px;  /* Bordas arredondadas */
+    border-color: #222222;  /* Cor da borda */
+    border-style: groove;  /* Estilo de borda 'groove' (texturizado) */
+    border: 10px;  /* Largura da borda de 10px */
+    display: grid;  /* Usando grid para organizar os filhos internos */
+    grid-template-columns: auto auto;  /* Organiza em duas colunas */
+}
+
+/* Área de arrastar e soltar */
+.dropArea {
+    padding: 30px;  /* Espaçamento interno de 30px */
+    display: grid;  /* Usando grid para o layout */
+    grid-template-columns: repeat(auto-fit, minmax(40px, 3fr));  /* Colunas adaptáveis, cada uma no mínimo 40px */
+    gap: 10px;  /* Espaçamento entre as colunas */
+    height: 50px;  /* Altura fixa de 50px */
+    align-content: center;  /* Alinhamento vertical dos itens */
+}
+
+/* Estilo para as letras que são arrastáveis */
+.letraInDroppable {
+    justify-content: center;  /* Alinhamento horizontal dos itens */
+    align-items: center;  /* Alinhamento vertical dos itens */
+    font-size: 20px;  /* Tamanho da fonte */
+    width: 50px;  /* Largura fixa de 50px */
+    height: 50px;  /* Altura fixa de 50px */
+    display: flex;  /* Usando flexbox para centralizar o conteúdo */
+    color: white;  /* Cor do texto */
+}
+
+/* Imagem de fundo */
+.bgImage {
+    background-image: url('../../assets/images/jacare-removebg.png');  /* Caminho da imagem de fundo */
+    background-size: contain;  /* Ajuste da imagem dentro do contêiner */
+    background-repeat: no-repeat;  /* Impede a repetição da imagem */
+    height: 230px;  /* Altura fixa da imagem */
+    width: 100%;  /* Largura total */
+    margin-left: 87%;  /* Margem à esquerda */
+}
+
+/* Estilo geral do corpo do jogo */
+.bodyGame {
+    max-width: 100%;  /* Largura máxima de 100% */
+    min-width: 80%;  /* Largura mínima de 80% */
+    width: 100%;  /* Largura fixa de 100% */
+}
+
+/* Container do jogo, centralizando o conteúdo */
+.jogo {
+    display: flex;  /* Usando flexbox */
+    justify-content: center;  /* Alinhamento horizontal ao centro */
+    align-items: center;  /* Alinhamento vertical ao centro */
+}
+
+/* Estilo para o conteúdo do jogo */
+.gameContent {
+    border-radius: 10px;  /* Bordas arredondadas */
+    border-color: #3C5742;  /* Cor da borda */
+    background-color: #82BD8F;  /* Cor de fundo verde */
+    border-style: groove;  /* Estilo da borda 'groove' */
+    width: 100%;  /* Largura fixa de 100% */
+    box-shadow: 2px 2px #5F8A68;  /* Sombra na borda */
+    height: 700px;  /* Altura fixa de 700px */
+}
+
+/* Estilo da frase */
+.phrase {
+    width: 100%;  /* Largura total */
+    height: 100px;  /* Altura fixa de 100px */
+    text-align: start;  /* Alinhamento do texto à esquerda */
+    align-content: center;  /* Alinhamento vertical */
+    min-height: 50px;  /* Altura mínima de 50px */
+}
+
+/* Estilo para o resultado */
+.result {
+    height: 200px;  /* Altura fixa de 200px */
+}
+
+/* Estilo para letras dentro da área de arrastar e soltar */
+.letraInDroppable {
+    background-color: #93D6A2;  /* Cor de fundo verde claro */
+    color: rgb(0, 0, 0);  /* Cor do texto preta */
+    width: 50px;  /* Largura fixa de 50px */
+    height: 50px;  /* Altura fixa de 50px */
+    border-radius: 7px;  /* Bordas arredondadas */
+    text-align: center;  /* Alinhamento do texto ao centro */
+    align-content: center;  /* Alinhamento vertical ao centro */
+    box-sizing: border-box;  /* Inclui bordas e padding nas dimensões */
+}
+
+/* Estilos para telas pequenas (max-width: 1400px) */
+@media (max-width:1400px) {
+
+    .phrase {
+        height: 50px;  /* Reduz a altura da frase */
+    }
+
+    .resultletra {
+        height: 200px;  /* Ajusta a altura para telas médias */
+    }
+
+    .dropArea {
+        height: 200px;  /* Ajusta a altura */
+        grid-template-columns: auto auto auto;  /* Ajusta o layout das colunas */
+    }
+
+    .bgImage {
+        height: 230px;  /* Mantém a altura da imagem */
+        width: 100%;  /* Largura total */
+        margin-left: 85%;  /* Ajusta a margem */
+    }
+
+    .gameContent {
+        height: 100%;  /* Ajusta a altura do conteúdo */
+    }
+}
+
+/* Estilos para telas médias (max-width: 1000px) */
+@media (max-width:1000px) {
+    .resultletra {
+        height: 150px;  /* Ajusta a altura da letra */
+    }
+
+    .dropArea {
+        height: 150px;  /* Ajusta a altura */
+        grid-template-columns: auto auto auto;  /* Ajusta o layout das colunas */
+    }
+
+    .bgImage {
+        height: 180px;  /* Ajusta a altura da imagem */
+        width: 100%;  /* Largura total */
+        margin-left: 85%;  /* Ajusta a margem */
+    }
+
+    .gameContent {
+        width: 100%;  /* Ajusta a largura */
+        height: 100%;  /* Ajusta a altura */
+    }
+
+    .letraInDroppable {
+        width: 40px;  /* Ajusta o tamanho das letras */
+        height: 40px;  /* Ajusta o tamanho das letras */
+    }
+}
+
+/* Estilos para telas pequenas (max-width: 700px) */
+@media (max-width:700px) {
+    .pagVogais {
+        grid-template-columns: auto auto;  /* Ajusta para 2 colunas */
+        margin: 15px;  /* Diminui o espaçamento */
+    }
+
+    .resultletra {
+        height: 150px;  /* Ajusta a altura */
+    }
+
+    .dropArea {
+        height: 100px;  /* Ajusta a altura */
+        grid-template-columns: auto auto auto;  /* Ajusta o layout das colunas */
+    }
+
+    .gameContent {
+        width: 100%;  /* Ajusta a largura */
+    }
+
+    .letraInDroppable {
+        width: 35px;  /* Ajusta o tamanho das letras */
+        height: 35px;  /* Ajusta o tamanho das letras */
+    }
+}
+
+/* Estilos para telas muito pequenas (max-width: 600px) */
+@media (max-width:600px) {
+    .bgImage {
+        height: 0px;  /* Remove a altura da imagem */
+        margin-left: 0px;  /* Ajusta a margem */
+        background-image: none;  /* Remove a imagem de fundo */
+    }
+
+    .phrase {
+        font-size: 5px;  /* Diminui o tamanho da fonte */
+        height: 50px;  /* Ajusta a altura */
+    }
+}
+
+/* Estilos para telas muito pequenas (max-width: 400px) */
+@media (max-width:400px) {
+    .pagVogais {
+        grid-template-columns: auto;  /* Apenas uma coluna */
+        margin: 10px;  /* Diminui o espaçamento */
+    }
+
+    .resultletra {
+        margin-top: 60px;  /* Adiciona margem superior */
+        height: 120px;  /* Ajusta a altura */
+        display: grid;  /* Usando grid para o layout */
+        grid-template-columns: auto;  /* Apenas uma coluna */
+    }
+
+    .dropArea {
+        grid-template-columns: auto auto auto;  /* Ajusta o layout das colunas */
+        gap: 10px;  /* Espaçamento entre as colunas */
+        height: 90px;  /* Ajusta a altura */
+    }
+
+    .bgImage {
+        height: 0px;  /* Remove a altura da imagem */
+        margin-left: 0px;  /* Ajusta a margem */
+        background-image: none;  /* Remove a imagem de fundo */
+    }
+
+    .gameContent {
+        width: 300px;  /* Ajusta a largura */
+    }
+
+    .letraInDroppable {
+        width: 30px;  /* Ajusta o tamanho das letras */
+        height: 30px;  /* Ajusta o tamanho das letras */
+    }
+}

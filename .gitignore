@@ -7,12 +7,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node modules
 node_modules
 dist
 dist-ssr
-*.local
 
-# Editor directories and files
+# Arquivos temporários e locais
+*.local
+*.env
+
+# Diretórios de editor e IDE
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +26,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Outras pastas de build
+coverage/
+
+# Configurações do Docker
+docker-compose.override.yml

@@ -1,0 +1,99 @@
+@import url('../../../assets/styles/color_pallete.css');
+
+div.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+    background-color: var(--white);
+    padding: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Adiciona posição fixa */
+    top: 0; /* Fixa o cabeçalho ao topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    z-index: 1000; /* Mantém o cabeçalho acima de outros elementos */
+}
+
+li > img {
+    width: 50px;
+    padding: 5px;
+}
+
+.linkStyles {
+    color: var(--black);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.linkStyles:last-child{
+    background-color: var(--red);
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: var(--white);
+    border: 2px solid var(--red);
+    transition: 0.5s;
+}
+
+.linkStyles:last-child:hover{
+    background-color: var(--white);
+    color: var(--red);
+    transition: 0.5s;
+}
+
+li > select {
+    width: 20px;
+}
+
+li:not(:first-child):not(:last-child):hover {
+    border-bottom: 2.5px solid var(--red);
+    margin-top: 2.5px;
+    transition: 0.1s;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.socialLinks {
+    margin-top: 10px;
+}
+
+.socialLinks a {
+    margin: 0 10px;
+}
+
+.socialLinks img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+    div.head {
+        gap: 10px;
+    }
+}

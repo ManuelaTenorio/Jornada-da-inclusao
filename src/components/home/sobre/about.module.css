@@ -1,0 +1,90 @@
+@import url('../../../assets/styles/color_pallete.css');
+
+.aboutContainer {
+    background-color: var(--white);
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .aboutContainer h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .aboutItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  .aboutImage {
+    width: 300px;
+    margin: 10px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0; /* Garante que a imagem não encolha */
+    border-radius: 18px;
+    background-color: var(--color-2);
+  }
+  
+  .aboutItem p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--black);
+    margin: 0;
+    text-align: justify;
+  }
+
+  /* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 30px;
+  }
+
+  .aboutContainer h2 {
+    font-size: 2rem;
+  }
+
+  .aboutItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+
+    .aboutItem p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .aboutContainer {
+      padding: 20px;
+    }
+
+    .aboutContainer h2 {
+      font-size: 1.5rem;
+    }
+
+    .aboutItem p {
+      font-size: 0.9rem;
+    }
+  }
+}
+  

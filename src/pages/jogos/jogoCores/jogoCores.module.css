@@ -1,0 +1,133 @@
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.gameBody {
+  padding-block: 2em;
+  font-family: "Comic Neue";
+  color: var(--clr-neutral-500);
+
+  background-color: var(--clr-neutral-100);
+
+  width: 100%;
+  height: 100%;
+}
+
+.game {
+  background-color: var(--clr-info);
+  container-type: inline-size;
+  margin: auto;
+  width: min(800px, 100%);
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  font-weight: var(--fw-bold);
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  text-wrap-style: pretty;
+}
+
+.infoArea {
+  --padding: 1em;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--padding);
+
+  background-color: var(--clr-info-500);
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 1em;
+  margin-bottom: 2em;
+  padding: var(--padding);
+
+  .info {
+    background-color: var(--clr-neutral-200);
+    border: 1px solid var(--clr-neutral-500);
+    border-radius: 1em;
+    padding: 2em;
+  }
+}
+
+.colorArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--padding);
+  justify-content: space-around;
+
+  background-color: var(--clr-neutral-200);
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 1em;
+
+  transition: background-color 500ms 100ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--clr-neutral-300);
+    transition-duration: 0.5s;
+  }
+}
+
+.square {
+  cursor: grab;
+  z-index: 2;
+
+  border: 1px solid black;
+  border-radius: 1em;
+  margin: auto;
+  height: 4em;
+  width: 4em;
+
+  &:focus-within {
+    cursor: move;
+  }
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 25%));
+  gap: 1em;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: subgrid; */
+
+  background-color: var(--clr-neutral-200);
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 1em;
+  padding: 0.5em;
+
+  height: min(100px, 1fr);
+  width: min(100px, 1fr);
+
+  img {
+    align-self: flex-start;
+    width: 50%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+  }
+}
+
+.dropArea {
+  align-self: flex-end;
+  background-color: var(--clr-neutral-300);
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 1em;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}

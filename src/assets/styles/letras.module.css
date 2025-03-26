@@ -1,0 +1,106 @@
+/* Estilos gerais para .letras */
+.letras {
+    display: grid;  
+    /* Utiliza o layout de grid para distribuir os itens de forma organizada */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 3fr));  
+    /* 'auto-fit' faz com que as colunas se ajustem automaticamente ao espaço disponível, 
+       com o tamanho mínimo de 80px, e cada item pode crescer até 3 vezes a fração do espaço disponível. */
+    gap: 30px;  
+    /* Define o espaçamento de 30px entre os itens dentro do grid */
+    margin: 10px;  
+    /* Margem de 10px ao redor do grid */
+    width: 90%;  
+    /* O grid ocupa 90% da largura do contêiner pai */
+    transition: background-color 0.3s ease;  
+    /* A transição suave para a mudança de cor de fundo ao passar o mouse */
+}
+
+
+/* Estilos gerais para os itens dentro de .letras, a classe .letra */
+.letra {
+    background-color: rgb(201, 201, 201);  
+    /* Cor de fundo padrão para os itens dentro do grid */
+    color: rgb(62, 85, 39);  
+    /* Cor do texto padrão para os itens */
+    width: 50px;  
+    /* Largura de 50px para cada item */
+    height: 50px;  
+    /* Altura de 50px para cada item */
+    border-radius: 7px;  
+    /* Bordas arredondadas de 7px nos itens */
+    box-sizing: border-box;  
+    /* Garante que o padding e a borda sejam incluídos nas dimensões totais do item */
+    transition: transform 0.2s ease;  
+    /* Transição suave para o efeito de transformação (como aumentar o tamanho) */
+}
+
+
+/* Efeito de hover, foco e ativo para .letra */
+.letra:hover,
+.letra:active,
+.letra:focus {
+    background-color: rgb(177, 177, 177);  
+    /* Altera a cor de fundo para um tom mais claro quando o item está em hover, ativo ou focado */
+    border-radius: 7px;  
+    /* Mantém as bordas arredondadas */
+    transform: scale(1.1);  
+    /* Aumenta o tamanho do item para 1.1 vezes seu tamanho original */
+    cursor: pointer;  
+    /* Altera o cursor para um ponteiro, indicando que o item é interativo */
+}
+
+/* Estilos específicos para números */
+#num1,
+#num5,
+#num9,
+#num15,
+#num21 {
+    background-color: #66CC92;  
+    /* Aplica uma cor de fundo diferente para números específicos (num1, num5, etc.) */
+}
+
+
+/* Media Query para telas menores que 1400px */
+@media (max-width: 1400px) {
+    .letras {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 3fr));  
+        /* Em telas médias (menos que 1400px), as colunas têm pelo menos 70px de largura */
+        /* Não altera a configuração principal, mas ajusta as colunas para melhor ajuste em telas médias */
+    }
+}
+
+/* Media Query para telas menores que 1000px */
+@media (max-width: 1000px) {
+    .letras {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 3fr));  
+        /* Em telas menores (menos que 1000px), as colunas têm pelo menos 60px de largura */
+        /* O número de colunas pode diminuir para se ajustar ao espaço disponível */
+    }
+}
+
+/* Media Query para telas menores que 700px */
+@media (max-width: 700px) {
+    .letras {
+        grid-template-columns: auto auto auto;  
+        /* Em telas muito pequenas (menos que 700px), a largura mínima das colunas aumenta para 80px, 
+           e o número de colunas por linha diminui para 3 */
+    }
+}
+
+/* Media Query para telas menores que 500px */
+@media (max-width: 500px) {
+    .letras {
+        grid-template-columns: auto auto auto auto;  
+        /* Em telas ainda menores (menos que 500px), as colunas aumentam, com 4 colunas por linha */
+    }
+}
+
+/* Media Query para telas menores que 400px */
+@media (max-width: 410px) {
+    .letras {
+        grid-template-columns: auto auto auto;  
+        /* Para telas extremamente pequenas (menos que 400px), o número de colunas se fixa em 3 por linha */
+        width: 30px;  
+        /* Reduz a largura do grid para 30px para caber melhor em telas pequenas */
+    }
+}

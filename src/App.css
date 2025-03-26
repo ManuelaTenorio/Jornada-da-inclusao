@@ -1,87 +1,110 @@
-@import url('./assets/styles/color_pallete.css');
+@import url("./assets/styles/fonts.css");
+@import url("./assets/styles/reset.css");
 
-h1{
-    text-align: center;
-    font-family: sans-serif;
+/* TODO: Set brighter colors for the design system */
+
+/* GENERAL STYLING */
+:root {
+  /* Typography */
+
+  /* font face */
+  --ff-primary: "Inter";
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-primary);
+
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2rem;
+  --fs-800: 3rem;
+  --fs-900: 4rem;
+
+  /* font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+
+  /* Colors */
+
+  /* brand colors */
+  --clr-primary-500: #93d6a2;
+  --clr-primary-600: #3c5742;
+  --clr-primary-700: #5f8a68;
+  --clr-primary-800: #82bd8f;
+
+  --clr-secondary-500: #d4b4e6;
+  --clr-secondary-600: #5e5066;
+  --clr-secondary-700: #8d7799;
+  --clr-secondary-800: #bc9fcc;
+
+  /* neutral light */
+  --clr-neutral-100: #fdfdfd;
+  --clr-neutral-200: #dadada;
+  --clr-neutral-300: #eaeaea;
+  --clr-neutral-400: #fafafa;
+
+  /* neutral dark */
+  --clr-neutral-500: #222222;
+  --clr-neutral-600: #333333;
+  --clr-neutral-700: #474747;
+  --clr-neutral-800: #5f5f5f;
+
+  /* feedback */
+  --clr-info-500: #78a2d2;
+  --clr-info-600: #2f3f52;
+  --clr-info-700: #4c6685;
+  --clr-info-800: #698db8;
+
+  --clr-success-500: #66cc92;
+  --clr-success-600: #264d37;
+  --clr-success-700: #40805b;
+  --clr-success-800: #59b380;
+
+  --clr-warning-500: #fac86f;
+  --clr-warning-600: #7a6136;
+  --clr-warning-700: #ad8a4c;
+  --clr-warning-800: #e0b263;
+
+  --clr-danger-500: #f58888;
+  --clr-danger-600: #754242;
+  --clr-danger-700: #a85e5e;
+  --clr-danger-800: #db7b7b;
 }
 
+/* DEFAULTS */
 body {
-    margin: 0;
-    background-color: var(--color-2);
+  font-family: var(--ff-body);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-regular);
+
+  background-color: var(--clr-neutral-100);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
 }
 
-.btnJogos{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    button{
-        border-radius: 5px;
-        border: 0;
-        font-size: x-large;
-        background-color: rgb(201, 201, 201);
-    }
-    :hover{
-        background-color: rgb(177, 177, 177);
-        border-radius: 7px;
-        border: 0;
-    }
-}
-/* 
-.primary {
-    --clr-primary-500: #93D6A2;
-    --clr-primary-600: #3C5742;
-    --clr-primary-700: #5F8A68;
-    --clr-primary-900: #82BD8F;
+/* HELPERS */
+.container {
+  width: min(900px, 95%);
+
+  margin: auto;
 }
 
-.secondary {
-    --clr-secondary-500: #D4B4E6;
-    --clr-secondary-600: #5E5066;
-    --clr-secondary-700: #8D7799;
-    --clr-secondary-800: #BC9FCC;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
-
-.neutralHigh {
-    
-    --clr-neutral-100: #F0F0F0;
-    --clr-neutral-200: #C0C0C0;
-    --clr-neutral-300: #D0D0D0;
-    --clr-neutral-400: #E0E0E0;
-}
-
-.neutralLow {
-    
-    --clr-neutral-500: #222222;
-    --clr-neutral-600: #333333;
-    --clr-neutral-700: #474747;
-    --clr-neutral-800: #5F5F5F;
-}
-
-.info {
-    --clr-info-500: #78A2D2;
-    --clr-info-600: #2F3F52;
-    --clr-info-700: #4C6685;
-    --clr-info-800: #698DB8;
-}
-
-.success {
-    --clr-success-500: #66CC92;
-    --clr-success-600: #264D37;
-    --clr-success-700: #40805B;
-    --clr-success-800: #59B380;
-}
-
-.warning {
-    --clr-warning-500: #FAC86F;
-    --clr-warning-600: #7A6136;
-    --clr-warning-700: #AD8A4C;
-    --clr-warning-800: #E0B263;
-}
-
-.danger {
-    --clr-danger-500: #F59A88;
-    --clr-danger-600: #DB8B7B;
-    --clr-danger-700: #A86B5E;
-    --clr-danger-800: #754A42;
-} */

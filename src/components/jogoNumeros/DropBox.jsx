@@ -1,17 +1,17 @@
 import React from 'react';
-import classes from '../../assets/styles/jogoNumeros.module.css'
+import styles from '../../assets/styles/jogoNumeros.module.css'
 
 export const DropBox = ({ droppedNumbers }) => {
   return (
-    <div className={classes.dropBox}>
-      <div className={classes.droppedNumbersContainer}>
+    <div className={styles.dropBox}>
+      <div className={styles.droppedNumbersContainer}>
         {droppedNumbers.length === 0 ? (
           <p></p>
         ) : (
           droppedNumbers.map(number => (
-            <div key={number} className={classes.numberGrid}>
+            <div key={number} className={styles.numberGrid}>
 
-                <p className={classes.numberBox}>{number}</p>
+              <p className={styles.numberBox}>{number}</p>
 
             </div>
           ))

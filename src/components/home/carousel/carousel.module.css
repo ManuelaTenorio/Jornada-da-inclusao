@@ -1,0 +1,83 @@
+@import url('../../../assets/styles/color_pallete.css');
+* {
+  box-sizing: border-box;
+}
+
+.carouselSection {
+  width: 100%;
+  height: 80vh;
+  padding-top: 80px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+.carouselInner { 
+  display: flex;
+  width: 100%;
+  /* 3 slides = 300% da largura */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselItem {
+  flex: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselItem img {
+  width: 100vw;
+  height: 100%;
+  /* Mantém a proporção da imagem */
+  object-fit: cover;
+  /* Garante que a imagem se ajuste sem cortar */
+  display: block;
+  max-height: 100%;
+  /* Limita a altura da imagem para o banner */
+  max-width: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.item1:checked ~ .carouselInner { /* Corrigido o nome da classe */
+  transform: translateX(0%);
+}
+
+.item2:checked ~ .carouselInner { /* Corrigido o nome da classe */
+  transform: translateX(-100%);
+}
+
+.item3:checked ~ .carouselInner { /* Corrigido o nome da classe */
+  transform: translateX(-200%);
+}
+
+.item1:checked ~ .controls label[for="item-1"],
+.item2:checked ~ .controls label[for="item-2"],
+.item3:checked ~ .controls label[for="item-3"] {
+  background-color: #333;
+}

@@ -43,11 +43,11 @@ class Builder {
 
   render() {
     return (
-      <div className={classes.container}>
+      <div className={styles.container}>
         <h1>{this.name}</h1>
         <p>{this.description}</p>
         {this.isDraggable && <DropBox />}
-        <div className={classes.numberGrid}>
+        <div className={styles.numberGrid}>
           {this.isRandom ? random(this.elementList) : this.elementList}
         </div>
       </div>

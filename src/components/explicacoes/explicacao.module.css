@@ -1,0 +1,44 @@
+.explicacaoBody {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.containerExp {
+  background-color: var(--clr-neutral-100);
+  border-radius: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  margin-inline: auto;
+  padding: 2em;
+  width: min(800px, 95%);
+
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-600);
+}
+
+.headingExp {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
+}
+
+.choices {
+  display: flex;
+  gap: 2em;
+}
+
+.inlineButton {
+  background-color: var(--clr-info-500);
+  border-radius: 2em;
+  padding: 0.25em 0.75em;
+
+  text-decoration: none;
+
+  color: var(--clr-neutral-500);
+
+  transition: opacity 200ms ease;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.75;
+  }
+}
