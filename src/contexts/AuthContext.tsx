@@ -24,8 +24,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const [usuario, setUsuario] = useState<UsuarioLogin>({
         id: 0, // ID do usuário, inicia como 0.
         nome: "", // Nome do usuário, inicia como uma string vazia.
-        email: "", // E-mail do usuário, inicia como uma string vazia.
+        usuario: "", // E-mail do usuário, inicia como uma string vazia.
         senha: "", // Senha do usuário, inicia como uma string vazia.
+        foto: "",
         token: "" // Token de autenticação, inicia como uma string vazia.
     });
 
@@ -49,8 +50,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
         setUsuario({
             id: 0, // Reseta o ID do usuário para 0.
             nome: "", // Reseta o nome do usuário para uma string vazia.
-            email: "", // Reseta o e-mail do usuário para uma string vazia.
+            usuario: "", // Reseta o e-mail do usuário para uma string vazia.
             senha: "", // Reseta a senha do usuário para uma string vazia.
+            foto: "",
             token: "" // Reseta o token do usuário para uma string vazia.
         });
     }
